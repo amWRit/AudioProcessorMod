@@ -12,7 +12,7 @@ int main() {
     // Create an waveProcessor object (using WaveAudioProcessor)
     WaveAudioProcessor waveProcessor;
 
-    std::string filePath = "../audio/input/hbsong.wav"; // Todo: Ask from user 
+    std::string filePath = "../audio/input/test1.wav"; // Todo: Ask from user 
     if (!waveProcessor.loadAudio(filePath)) {
         std::cerr << "Failed to load audio file: " << filePath << std::endl;
         return -1;
@@ -69,7 +69,7 @@ int main() {
     // std::vector<double> frequencies = fftProcessor.getFrequencies();
     // std::vector<double> magnitudes = fftProcessor.getMagnitudes();
     // could use a map to store freq and mag --> use a single method ?
-    std::vector<kiss_fft_cpx> fftOutput = fftProcessor.getFFTOutput();
+    std::vector<std::complex<double>> fftOutput = fftProcessor.getFFTOutput();
     std::vector<double> frequencies = SignalProcessor::calculateFrequencies(fftSize, sampleRate, fftOutput);
     std::vector<double> magnitudes = SignalProcessor::calculateMagnitudes(fftSize, sampleRate, fftOutput);
 

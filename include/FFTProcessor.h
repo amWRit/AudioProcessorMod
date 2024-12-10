@@ -2,31 +2,24 @@
 #define FFTPROCESSOR_H
 
 #include <vector>
-#include "../include/kissfft/kiss_fft.h"
-#include "../include/kissfft/kiss_fftr.h"
+#include <complex>
 
 class FFTProcessor {
-    public:
-        FFTProcessor(size_t fftSize, double sampleRate);
-        ~FFTProcessor();
+public:
+    FFTProcessor(size_t fftSize, double sampleRate);
+    ~FFTProcessor();
 
-        void performFFT(const std::vector<double>& channelData);
+    void performFFT(const std::vector<double>& channelData);
+    std::vector<double> performIFFT(const std::vector<std::complex<double>>& fftOutput);
+    const std::vector<std::complex<double>>& getFFTOutput() const;
 
-        std::vector<double> performIFFT(const std::vector<kiss_fft_cpx>& fftOutput);
+private:
+    size_t fftSize;
+    double sampleRate;
+    std::vector<std::complex<double>> in, out;
 
-        const std::vector<kiss_fft_cpx>& getFFTOutput() const;
-
-    private:
-        size_t fftSize;
-        double sampleRate;
-        kiss_fft_cfg cfg; // For FFT
-        kiss_fft_cfg cfgInverse; // For IFFT
-        std::vector<kiss_fft_cpx> in;
-        std::vector<kiss_fft_cpx> out;
-        //Todo: calculation of frequencies and magnitudes has been moved to signalprocessor
-        // so why this might be necessary here
-        std::vector<double> frequencies; 
-        std::vector<double> magnitudes;
+    // Helper methods for FFT/IFFT (if implementing your own)
+    void fft(std::vector<std::complex<double>>& data, bool inverse);
 };
 
 #endif // FFTPROCESSOR_H

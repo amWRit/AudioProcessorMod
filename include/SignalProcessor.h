@@ -12,8 +12,8 @@
 class SignalProcessor {
     public:
         // 
-        static std::vector<kiss_fft_cpx> filterFrequencyComponents(
-            const std::vector<kiss_fft_cpx>& fftOutput,
+        static std::vector<std::complex<double>> filterFrequencyComponents(
+            const std::vector<std::complex<double>>& fftOutput,
             const std::vector<double>& frequencies,
             double lowFreq, double highFreq);
         
@@ -27,14 +27,14 @@ class SignalProcessor {
         static std::vector<double> calculateFrequencies(
             size_t fftSize,
             double sampleRate,
-            const std::vector<kiss_fft_cpx>& fftOutput
+            const std::vector<std::complex<double>>& fftOutput
         );
 
         // return magnittudes from fftouput
         static std::vector<double> calculateMagnitudes(
             size_t fftSize,
             double sampleRate,
-            const std::vector<kiss_fft_cpx>& fftOutput
+            const std::vector<std::complex<double>>& fftOutput
         );
 
         // method for chunking, processing and reconstructing audio

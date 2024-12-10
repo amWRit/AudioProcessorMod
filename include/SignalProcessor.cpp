@@ -7,18 +7,17 @@
 #include "../include/kissfft/kiss_fftr.h"
 
 // Helper method to filter frequencies within a given range
-std::vector<kiss_fft_cpx> SignalProcessor::filterFrequencyComponents(
-    const std::vector<kiss_fft_cpx>& fftOutput,
+std::vector<std::complex<double>> SignalProcessor::filterFrequencyComponents(
+    const std::vector<std::complex<double>>& fftOutput,
     const std::vector<double>& frequencies,
     double lowFreq, double highFreq) {
 
-    std::vector<kiss_fft_cpx> filteredOutput(fftOutput.size());
+    std::vector<std::complex<double>> filteredOutput(fftOutput.size());
     for (size_t i = 0; i < frequencies.size(); ++i) {
         if (frequencies[i] >= lowFreq && frequencies[i] <= highFreq) {
             filteredOutput[i] = fftOutput[i];
         } else {
-            filteredOutput[i].r = 0.0;
-            filteredOutput[i].i = 0.0;
+            filteredOutput[i] = std::complex<double>(0.0, 0.0);
         }
     }
     return filteredOutput;
@@ -49,7 +48,7 @@ bool SignalProcessor::compareSignals(
 std::vector<double> SignalProcessor::calculateFrequencies(
     size_t fftSize,
     double sampleRate,
-    const std::vector<kiss_fft_cpx>& fftOutput) {
+    const std::vector<std::complex<double>>& fftOutput) {
     std::vector<double> frequencies;
     for (size_t i = 0; i < fftSize / 2; ++i) { // Only up to Nyquist frequency
         double frequency = static_cast<double>(i) * sampleRate / fftSize; //
@@ -61,10 +60,10 @@ std::vector<double> SignalProcessor::calculateFrequencies(
 std::vector<double> SignalProcessor::calculateMagnitudes(
     size_t fftSize,
     double sampleRate,
-    const std::vector<kiss_fft_cpx>& fftOutput) {
+    const std::vector<std::complex<double>>& fftOutput) {
     std::vector<double> magnitudes;
     for (size_t i = 0; i < fftSize / 2; ++i) { // Only up to Nyquist frequency
-        double magnitude = std::sqrt(fftOutput[i].r * fftOutput[i].r + fftOutput[i].i * fftOutput[i].i);
+        double magnitude = std::sqrt(fftOutput[i].real() * fftOutput[i].real() + fftOutput[i].imag() * fftOutput[i].imag());
         magnitudes.push_back(magnitude);
     }
     return magnitudes;
@@ -90,9 +89,9 @@ std::vector<double> SignalProcessor::extractAudioFromChunks(
         std::vector<double> chunk(originalSignal.begin() + i * fftSize, 
                                    originalSignal.begin() + (i + 1) * fftSize);
         fftProcessor.performFFT(chunk);
-        const std::vector<kiss_fft_cpx>& fftOutput = fftProcessor.getFFTOutput();
+        const std::vector<std::complex<double>>& fftOutput = fftProcessor.getFFTOutput();
         std::vector<double> frequencies = calculateFrequencies(fftSize, sampleRate, fftOutput);
-        std::vector<kiss_fft_cpx> filteredOutput = filterFrequencyComponents(fftOutput, frequencies, lowFreq, highFreq);
+        std::vector<std::complex<double>> filteredOutput = filterFrequencyComponents(fftOutput, frequencies, lowFreq, highFreq);
         std::vector<double> ifftOutput = fftProcessor.performIFFT(filteredOutput);  // Call the existing IFFT method
         extractedSignal.insert(extractedSignal.end(), ifftOutput.begin(), ifftOutput.end());
     }
