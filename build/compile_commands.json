@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\main.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\include\\GuitarIdentifier.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\include\\GuitarIdentifier.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/include/GuitarIdentifier.cpp",
+  "output": "CMakeFiles/main.dir/include/GuitarIdentifier.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\include\\FFTProcessor.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\include\\FFTProcessor.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/include/FFTProcessor.cpp",
+  "output": "CMakeFiles/main.dir/include/FFTProcessor.cpp.obj"
+}
+]

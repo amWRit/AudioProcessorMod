@@ -1,0 +1,3 @@
+C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/main.dir
+C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/edit_cache.dir
+C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/rebuild_cache.dir
