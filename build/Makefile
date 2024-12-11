@@ -64,6 +64,16 @@ CMAKE_BINARY_DIR = "C:\My Documents\DSPProjects\AudioProcessor_Mod\build"
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	"C:\Program Files\CMake\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -83,6 +93,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -116,72 +171,247 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named AudioProcessor
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main
-.PHONY : main
+AudioProcessor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AudioProcessor
+.PHONY : AudioProcessor
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+AudioProcessor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessor.dir\build.make CMakeFiles/AudioProcessor.dir/build
+.PHONY : AudioProcessor/fast
 
-include/FFTProcessor.obj: include/FFTProcessor.cpp.obj
-.PHONY : include/FFTProcessor.obj
+#=============================================================================
+# Target rules for targets named AudioProcessorLib
+
+# Build rule for target.
+AudioProcessorLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AudioProcessorLib
+.PHONY : AudioProcessorLib
+
+# fast build rule for target.
+AudioProcessorLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/build
+.PHONY : AudioProcessorLib/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named AudioProcessorTests
+
+# Build rule for target.
+AudioProcessorTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AudioProcessorTests
+.PHONY : AudioProcessorTests
+
+# fast build rule for target.
+AudioProcessorTests/fast:
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/build
+.PHONY : AudioProcessorTests/fast
+
+src/DrumIdentifier.obj: src/DrumIdentifier.cpp.obj
+.PHONY : src/DrumIdentifier.obj
 
 # target to build an object file
-include/FFTProcessor.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/include/FFTProcessor.cpp.obj
-.PHONY : include/FFTProcessor.cpp.obj
+src/DrumIdentifier.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj
+.PHONY : src/DrumIdentifier.cpp.obj
 
-include/FFTProcessor.i: include/FFTProcessor.cpp.i
-.PHONY : include/FFTProcessor.i
+src/DrumIdentifier.i: src/DrumIdentifier.cpp.i
+.PHONY : src/DrumIdentifier.i
 
 # target to preprocess a source file
-include/FFTProcessor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/include/FFTProcessor.cpp.i
-.PHONY : include/FFTProcessor.cpp.i
+src/DrumIdentifier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.i
+.PHONY : src/DrumIdentifier.cpp.i
 
-include/FFTProcessor.s: include/FFTProcessor.cpp.s
-.PHONY : include/FFTProcessor.s
+src/DrumIdentifier.s: src/DrumIdentifier.cpp.s
+.PHONY : src/DrumIdentifier.s
 
 # target to generate assembly for a file
-include/FFTProcessor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/include/FFTProcessor.cpp.s
-.PHONY : include/FFTProcessor.cpp.s
+src/DrumIdentifier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.s
+.PHONY : src/DrumIdentifier.cpp.s
 
-include/GuitarIdentifier.obj: include/GuitarIdentifier.cpp.obj
-.PHONY : include/GuitarIdentifier.obj
+src/FFTProcessor.obj: src/FFTProcessor.cpp.obj
+.PHONY : src/FFTProcessor.obj
 
 # target to build an object file
-include/GuitarIdentifier.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/include/GuitarIdentifier.cpp.obj
-.PHONY : include/GuitarIdentifier.cpp.obj
+src/FFTProcessor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj
+.PHONY : src/FFTProcessor.cpp.obj
 
-include/GuitarIdentifier.i: include/GuitarIdentifier.cpp.i
-.PHONY : include/GuitarIdentifier.i
+src/FFTProcessor.i: src/FFTProcessor.cpp.i
+.PHONY : src/FFTProcessor.i
 
 # target to preprocess a source file
-include/GuitarIdentifier.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/include/GuitarIdentifier.cpp.i
-.PHONY : include/GuitarIdentifier.cpp.i
+src/FFTProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.i
+.PHONY : src/FFTProcessor.cpp.i
 
-include/GuitarIdentifier.s: include/GuitarIdentifier.cpp.s
-.PHONY : include/GuitarIdentifier.s
+src/FFTProcessor.s: src/FFTProcessor.cpp.s
+.PHONY : src/FFTProcessor.s
 
 # target to generate assembly for a file
-include/GuitarIdentifier.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/include/GuitarIdentifier.cpp.s
-.PHONY : include/GuitarIdentifier.cpp.s
+src/FFTProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.s
+.PHONY : src/FFTProcessor.cpp.s
+
+src/FFTProcessorMod.obj: src/FFTProcessorMod.cpp.obj
+.PHONY : src/FFTProcessorMod.obj
+
+# target to build an object file
+src/FFTProcessorMod.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj
+.PHONY : src/FFTProcessorMod.cpp.obj
+
+src/FFTProcessorMod.i: src/FFTProcessorMod.cpp.i
+.PHONY : src/FFTProcessorMod.i
+
+# target to preprocess a source file
+src/FFTProcessorMod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.i
+.PHONY : src/FFTProcessorMod.cpp.i
+
+src/FFTProcessorMod.s: src/FFTProcessorMod.cpp.s
+.PHONY : src/FFTProcessorMod.s
+
+# target to generate assembly for a file
+src/FFTProcessorMod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.s
+.PHONY : src/FFTProcessorMod.cpp.s
+
+src/GuitarIdentifier.obj: src/GuitarIdentifier.cpp.obj
+.PHONY : src/GuitarIdentifier.obj
+
+# target to build an object file
+src/GuitarIdentifier.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj
+.PHONY : src/GuitarIdentifier.cpp.obj
+
+src/GuitarIdentifier.i: src/GuitarIdentifier.cpp.i
+.PHONY : src/GuitarIdentifier.i
+
+# target to preprocess a source file
+src/GuitarIdentifier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.i
+.PHONY : src/GuitarIdentifier.cpp.i
+
+src/GuitarIdentifier.s: src/GuitarIdentifier.cpp.s
+.PHONY : src/GuitarIdentifier.s
+
+# target to generate assembly for a file
+src/GuitarIdentifier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.s
+.PHONY : src/GuitarIdentifier.cpp.s
+
+src/Identifier.obj: src/Identifier.cpp.obj
+.PHONY : src/Identifier.obj
+
+# target to build an object file
+src/Identifier.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj
+.PHONY : src/Identifier.cpp.obj
+
+src/Identifier.i: src/Identifier.cpp.i
+.PHONY : src/Identifier.i
+
+# target to preprocess a source file
+src/Identifier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.i
+.PHONY : src/Identifier.cpp.i
+
+src/Identifier.s: src/Identifier.cpp.s
+.PHONY : src/Identifier.s
+
+# target to generate assembly for a file
+src/Identifier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.s
+.PHONY : src/Identifier.cpp.s
+
+src/SignalProcessor.obj: src/SignalProcessor.cpp.obj
+.PHONY : src/SignalProcessor.obj
+
+# target to build an object file
+src/SignalProcessor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj
+.PHONY : src/SignalProcessor.cpp.obj
+
+src/SignalProcessor.i: src/SignalProcessor.cpp.i
+.PHONY : src/SignalProcessor.i
+
+# target to preprocess a source file
+src/SignalProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.i
+.PHONY : src/SignalProcessor.cpp.i
+
+src/SignalProcessor.s: src/SignalProcessor.cpp.s
+.PHONY : src/SignalProcessor.s
+
+# target to generate assembly for a file
+src/SignalProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.s
+.PHONY : src/SignalProcessor.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessor.dir\build.make CMakeFiles/AudioProcessor.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -189,7 +419,8 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessor.dir\build.make CMakeFiles/AudioProcessor.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -197,7 +428,8 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessor.dir\build.make CMakeFiles/AudioProcessor.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -207,14 +439,37 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... main
-	@echo ... include/FFTProcessor.obj
-	@echo ... include/FFTProcessor.i
-	@echo ... include/FFTProcessor.s
-	@echo ... include/GuitarIdentifier.obj
-	@echo ... include/GuitarIdentifier.i
-	@echo ... include/GuitarIdentifier.s
+	@echo ... test
+	@echo ... AudioProcessor
+	@echo ... AudioProcessorLib
+	@echo ... AudioProcessorTests
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
+	@echo ... src/DrumIdentifier.obj
+	@echo ... src/DrumIdentifier.i
+	@echo ... src/DrumIdentifier.s
+	@echo ... src/FFTProcessor.obj
+	@echo ... src/FFTProcessor.i
+	@echo ... src/FFTProcessor.s
+	@echo ... src/FFTProcessorMod.obj
+	@echo ... src/FFTProcessorMod.i
+	@echo ... src/FFTProcessorMod.s
+	@echo ... src/GuitarIdentifier.obj
+	@echo ... src/GuitarIdentifier.i
+	@echo ... src/GuitarIdentifier.s
+	@echo ... src/Identifier.obj
+	@echo ... src/Identifier.i
+	@echo ... src/Identifier.s
+	@echo ... src/SignalProcessor.obj
+	@echo ... src/SignalProcessor.i
+	@echo ... src/SignalProcessor.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

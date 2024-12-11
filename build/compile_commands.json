@@ -1,20 +1,86 @@
 [
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\main.cpp\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\DrumIdentifier.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\DrumIdentifier.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/DrumIdentifier.cpp",
+  "output": "CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\FFTProcessor.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\FFTProcessor.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/FFTProcessor.cpp",
+  "output": "CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\FFTProcessorMod.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\FFTProcessorMod.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/FFTProcessorMod.cpp",
+  "output": "CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\GuitarIdentifier.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\GuitarIdentifier.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/GuitarIdentifier.cpp",
+  "output": "CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\Identifier.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\Identifier.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/Identifier.cpp",
+  "output": "CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\SignalProcessor.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\SignalProcessor.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/SignalProcessor.cpp",
+  "output": "CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\main.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\main.cpp\"",
   "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/main.cpp",
-  "output": "CMakeFiles/main.dir/src/main.cpp.obj"
+  "output": "CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj"
 },
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\include\\GuitarIdentifier.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\include\\GuitarIdentifier.cpp\"",
-  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/include/GuitarIdentifier.cpp",
-  "output": "CMakeFiles/main.dir/include/GuitarIdentifier.cpp.obj"
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessor.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessor.dir\\src\\main.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\main.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/main.cpp",
+  "output": "CMakeFiles/AudioProcessor.dir/src/main.cpp.obj"
 },
 {
-  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\main.dir\\include\\FFTProcessor.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\include\\FFTProcessor.cpp\"",
-  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/include/FFTProcessor.cpp",
-  "output": "CMakeFiles/main.dir/include/FFTProcessor.cpp.obj"
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/googletest/googlemock",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googlemock\\src\\gmock-all.cc\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googlemock/src/gmock-all.cc",
+  "output": "googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/googletest/googlemock",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googlemock\\src\\gmock_main.cc\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googlemock/src/gmock_main.cc",
+  "output": "googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/googletest/googletest",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googletest\\src\\gtest-all.cc\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googletest/src/gtest-all.cc",
+  "output": "googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/googletest/googletest",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googletest\\src\\gtest_main.cc\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googletest/src/gtest_main.cc",
+  "output": "googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/tests",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorTests.dir\\MainTest.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\tests\\MainTest.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/tests/MainTest.cpp",
+  "output": "tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/tests",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorTests.dir\\WaveAudioProcessorTest.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\tests\\WaveAudioProcessorTest.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/tests/WaveAudioProcessorTest.cpp",
+  "output": "tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioProcessorTest.cpp.obj"
 }
 ]

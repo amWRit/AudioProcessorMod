@@ -62,51 +62,335 @@ CMAKE_BINARY_DIR = "C:\My Documents\DSPProjects\AudioProcessor_Mod\build"
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/AudioProcessor.dir/all
+all: CMakeFiles/AudioProcessorLib.dir/all
+all: googletest/all
+all: tests/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/main.dir/codegen
+codegen: CMakeFiles/AudioProcessor.dir/codegen
+codegen: CMakeFiles/AudioProcessorLib.dir/codegen
+codegen: googletest/codegen
+codegen: tests/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: googletest/preinstall
+preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/AudioProcessor.dir/clean
+clean: CMakeFiles/AudioProcessorLib.dir/clean
+clean: googletest/clean
+clean: tests/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Directory level rules for directory googletest
+
+# Recursive "all" directory target.
+googletest/all: googletest/googlemock/all
+.PHONY : googletest/all
+
+# Recursive "codegen" directory target.
+googletest/codegen: googletest/googlemock/codegen
+.PHONY : googletest/codegen
+
+# Recursive "preinstall" directory target.
+googletest/preinstall: googletest/googlemock/preinstall
+.PHONY : googletest/preinstall
+
+# Recursive "clean" directory target.
+googletest/clean: googletest/googlemock/clean
+.PHONY : googletest/clean
+
+#=============================================================================
+# Directory level rules for directory googletest/googlemock
+
+# Recursive "all" directory target.
+googletest/googlemock/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/all: googletest/googlemock/CMakeFiles/gmock_main.dir/all
+googletest/googlemock/all: googletest/googletest/all
+.PHONY : googletest/googlemock/all
+
+# Recursive "codegen" directory target.
+googletest/googlemock/codegen: googletest/googlemock/CMakeFiles/gmock.dir/codegen
+googletest/googlemock/codegen: googletest/googlemock/CMakeFiles/gmock_main.dir/codegen
+googletest/googlemock/codegen: googletest/googletest/codegen
+.PHONY : googletest/googlemock/codegen
+
+# Recursive "preinstall" directory target.
+googletest/googlemock/preinstall: googletest/googletest/preinstall
+.PHONY : googletest/googlemock/preinstall
+
+# Recursive "clean" directory target.
+googletest/googlemock/clean: googletest/googlemock/CMakeFiles/gmock.dir/clean
+googletest/googlemock/clean: googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+googletest/googlemock/clean: googletest/googletest/clean
+.PHONY : googletest/googlemock/clean
+
+#=============================================================================
+# Directory level rules for directory googletest/googletest
+
+# Recursive "all" directory target.
+googletest/googletest/all: googletest/googletest/CMakeFiles/gtest.dir/all
+googletest/googletest/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+.PHONY : googletest/googletest/all
+
+# Recursive "codegen" directory target.
+googletest/googletest/codegen: googletest/googletest/CMakeFiles/gtest.dir/codegen
+googletest/googletest/codegen: googletest/googletest/CMakeFiles/gtest_main.dir/codegen
+.PHONY : googletest/googletest/codegen
+
+# Recursive "preinstall" directory target.
+googletest/googletest/preinstall:
+.PHONY : googletest/googletest/preinstall
+
+# Recursive "clean" directory target.
+googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest.dir/clean
+googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : googletest/googletest/clean
+
+#=============================================================================
+# Directory level rules for directory tests
+
+# Recursive "all" directory target.
+tests/all: tests/CMakeFiles/AudioProcessorTests.dir/all
+.PHONY : tests/all
+
+# Recursive "codegen" directory target.
+tests/codegen: tests/CMakeFiles/AudioProcessorTests.dir/codegen
+.PHONY : tests/codegen
+
+# Recursive "preinstall" directory target.
+tests/preinstall:
+.PHONY : tests/preinstall
+
+# Recursive "clean" directory target.
+tests/clean: tests/CMakeFiles/AudioProcessorTests.dir/clean
+.PHONY : tests/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/AudioProcessor.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=1,2,3,4 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/AudioProcessor.dir/all: CMakeFiles/AudioProcessorLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessor.dir\build.make CMakeFiles/AudioProcessor.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessor.dir\build.make CMakeFiles/AudioProcessor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=1,2 "Built target AudioProcessor"
+.PHONY : CMakeFiles/AudioProcessor.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/main.dir/all
+CMakeFiles/AudioProcessor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/AudioProcessor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : CMakeFiles/AudioProcessor.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
-.PHONY : main
+AudioProcessor: CMakeFiles/AudioProcessor.dir/rule
+.PHONY : AudioProcessor
 
 # codegen rule for target.
-CMakeFiles/main.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/codegen
-.PHONY : CMakeFiles/main.dir/codegen
+CMakeFiles/AudioProcessor.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessor.dir\build.make CMakeFiles/AudioProcessor.dir/codegen
+.PHONY : CMakeFiles/AudioProcessor.dir/codegen
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/AudioProcessor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessor.dir\build.make CMakeFiles/AudioProcessor.dir/clean
+.PHONY : CMakeFiles/AudioProcessor.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/AudioProcessorLib.dir
+
+# All Build rule for target.
+CMakeFiles/AudioProcessorLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10 "Built target AudioProcessorLib"
+.PHONY : CMakeFiles/AudioProcessorLib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/AudioProcessorLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/AudioProcessorLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 0
+.PHONY : CMakeFiles/AudioProcessorLib.dir/rule
+
+# Convenience name for target.
+AudioProcessorLib: CMakeFiles/AudioProcessorLib.dir/rule
+.PHONY : AudioProcessorLib
+
+# codegen rule for target.
+CMakeFiles/AudioProcessorLib.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/codegen
+.PHONY : CMakeFiles/AudioProcessorLib.dir/codegen
+
+# clean rule for target.
+CMakeFiles/AudioProcessorLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/clean
+.PHONY : CMakeFiles/AudioProcessorLib.dir/clean
+
+#=============================================================================
+# Target rules for target googletest/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+googletest/googlemock/CMakeFiles/gmock.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=14,15 "Built target gmock"
+.PHONY : googletest/googlemock/CMakeFiles/gmock.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googletest/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 0
+.PHONY : googletest/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: googletest/googlemock/CMakeFiles/gmock.dir/rule
+.PHONY : gmock
+
+# codegen rule for target.
+googletest/googlemock/CMakeFiles/gmock.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/codegen
+.PHONY : googletest/googlemock/CMakeFiles/gmock.dir/codegen
+
+# clean rule for target.
+googletest/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : googletest/googlemock/CMakeFiles/gmock.dir/clean
+
+#=============================================================================
+# Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=16,17 "Built target gmock_main"
+.PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googletest/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 0
+.PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+.PHONY : gmock_main
+
+# codegen rule for target.
+googletest/googlemock/CMakeFiles/gmock_main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/codegen
+.PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/codegen
+
+# clean rule for target.
+googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+#=============================================================================
+# Target rules for target googletest/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+googletest/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=18,19 "Built target gtest"
+.PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googletest/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 0
+.PHONY : googletest/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: googletest/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : gtest
+
+# codegen rule for target.
+googletest/googletest/CMakeFiles/gtest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/codegen
+.PHONY : googletest/googletest/CMakeFiles/gtest.dir/codegen
+
+# clean rule for target.
+googletest/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : googletest/googletest/CMakeFiles/gtest.dir/clean
+
+#=============================================================================
+# Target rules for target googletest/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=20,21 "Built target gtest_main"
+.PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 0
+.PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: googletest/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : gtest_main
+
+# codegen rule for target.
+googletest/googletest/CMakeFiles/gtest_main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/codegen
+.PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/codegen
+
+# clean rule for target.
+googletest/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/AudioProcessorTests.dir
+
+# All Build rule for target.
+tests/CMakeFiles/AudioProcessorTests.dir/all: CMakeFiles/AudioProcessorLib.dir/all
+tests/CMakeFiles/AudioProcessorTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+tests/CMakeFiles/AudioProcessorTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=11,12,13 "Built target AudioProcessorTests"
+.PHONY : tests/CMakeFiles/AudioProcessorTests.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/AudioProcessorTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/CMakeFiles/AudioProcessorTests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" 0
+.PHONY : tests/CMakeFiles/AudioProcessorTests.dir/rule
+
+# Convenience name for target.
+AudioProcessorTests: tests/CMakeFiles/AudioProcessorTests.dir/rule
+.PHONY : AudioProcessorTests
+
+# codegen rule for target.
+tests/CMakeFiles/AudioProcessorTests.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/codegen
+.PHONY : tests/CMakeFiles/AudioProcessorTests.dir/codegen
+
+# clean rule for target.
+tests/CMakeFiles/AudioProcessorTests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/clean
+.PHONY : tests/CMakeFiles/AudioProcessorTests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

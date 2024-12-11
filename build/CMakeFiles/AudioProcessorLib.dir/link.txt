@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libAudioProcessorLib.a CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj
+C:\MinGW\bin\ranlib.exe libAudioProcessorLib.a

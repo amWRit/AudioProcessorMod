@@ -12,12 +12,25 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.31.2/CMakeSystem.cmake"
+  "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/CMakeLists.txt"
+  "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googlemock/CMakeLists.txt"
+  "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googlemock/cmake/gmock.pc.in"
+  "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googlemock/cmake/gmock_main.pc.in"
+  "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googletest/CMakeLists.txt"
+  "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googletest/cmake/Config.cmake.in"
+  "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googletest/cmake/gtest.pc.in"
+  "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googletest/cmake/gtest_main.pc.in"
+  "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googletest/cmake/internal_utils.cmake"
+  "C:/My Documents/DSPProjects/AudioProcessor_Mod/tests/CMakeLists.txt"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakePackageConfigHelpers.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake"
@@ -25,6 +38,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake"
@@ -43,6 +57,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake"
+  "C:/Program Files/CMake/share/cmake-3.31/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -54,9 +69,25 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "googletest/googletest/generated/gmock.pc"
+  "googletest/googletest/generated/gmock_main.pc"
+  "googletest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "googletest/googletest/generated/GTestConfigVersion.cmake"
+  "googletest/googletest/generated/GTestConfig.cmake"
+  "googletest/googletest/generated/gtest.pc"
+  "googletest/googletest/generated/gtest_main.pc"
+  "googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/AudioProcessor.dir/DependInfo.cmake"
+  "CMakeFiles/AudioProcessorLib.dir/DependInfo.cmake"
+  "googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
+  "googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "tests/CMakeFiles/AudioProcessorTests.dir/DependInfo.cmake"
   )

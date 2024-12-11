@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20241211-1450-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.31.2"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-42I6GD7"
+	OSRelease=" Personal"
+	OSVersion=" (Build 19045)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="14"
+	ModelName=""
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="14857"
+	TotalPhysicalMemory="7916"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2712"
+	>
+	<Testing>
+		<StartDateTime>Dec 11 21:07 Nepal Standard Time</StartDateTime>
+		<StartTestTime>1733930560</StartTestTime>
+		<TestList>
+			<Test>./tests/AudioProcessorTests</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>AudioProcessorTests</Name>
+			<Path>./tests</Path>
+			<FullName>./tests/AudioProcessorTests</FullName>
+			<FullCommandLine>"C:\My Documents\DSPProjects\AudioProcessor_Mod\build\tests\AudioProcessorTests.exe"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>SEGFAULT</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>3221225477</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.120137</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>"C:\My Documents\DSPProjects\AudioProcessor_Mod\build\tests\AudioProcessorTests.exe"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJzVUU1rwkAQve+vmFv1YKz9uAR6CE0sglaJ2h4SCdtk0m5Zd8N+RPvvu4lEsCBIoYfOaWfmzcx7+5KHY2wgtkIw8Q73YFAbDaWSWxi1CWjLDHokGRxjA09cvlF+6KOomZJii8Jh0Qxs9QN8svSV1hjYgsmFkjlqLdXKNUkC8foZ2ticwXhTSYu23E5EcTyPfRgzjlBI1OLKUdkzR0gqkOYD1Y5phJw2De5GoXRQ4nlD2uwYMlFZM2yYjbwdrcmjn86+IJS5bZToNFwu3PlPzN37lEw2k0XaSkrPMM2ryh/dOnKUcauQvFBuEWTpQ9XhPN6p6a2i5SoL1uFkno0n06hPAILcWMp9KCnXSKJ95Whg4YNRFslvpTNRU86KrElayQnAOHAXw0s/HXrXsNX9i9xaduV/4dbN3Z+59Q0vSyyM====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Dec 11 21:07 Nepal Standard Time</EndDateTime>
+		<EndTestTime>1733930560</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

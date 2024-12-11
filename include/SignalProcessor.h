@@ -3,9 +3,7 @@
 
 #include <vector>
 #include <functional>
-#include "FFTProcessor.h"
-#include "../include/kissfft/kiss_fft.h"
-#include "../include/kissfft/kiss_fftr.h"
+#include "../include/FFTProcessor.h"
 
 // Todo: for now all the methods here are static
 // this could be combined with audioprocessor?
