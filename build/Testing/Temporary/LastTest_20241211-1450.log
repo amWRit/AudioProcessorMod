@@ -1,10 +1,10 @@
-Start testing: Dec 11 21:07 Nepal Standard Time
+Start testing: Dec 11 21:20 Nepal Standard Time
 ----------------------------------------------------------
 1/1 Testing: AudioProcessorTests
 1/1 Test: AudioProcessorTests
 Command: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/tests/AudioProcessorTests.exe"
 Directory: C:/My Documents/DSPProjects/AudioProcessor_Mod/build/tests
-"AudioProcessorTests" start time: Dec 11 21:07 Nepal Standard Time
+"AudioProcessorTests" start time: Dec 11 21:20 Nepal Standard Time
 Output:
 ----------------------------------------------------------
 [==========] Running 5 tests from 1 test suite.
@@ -12,29 +12,27 @@ Output:
 [----------] 5 tests from WaveAudioProcessorTest
 [ RUN      ] WaveAudioProcessorTest.LoadAudioTest
 ERROR: File doesn't exist or otherwise can't load file
-../audio/input/test1.wav
-C:\My Documents\DSPProjects\AudioProcessor_Mod\tests\WaveAudioProcessorTest.cpp:13: Failure
-Value of: processor.loadAudio(TEST_AUDIO_FILE)
-  Actual: false
-Expected: true
-
-ERROR: File doesn't exist or otherwise can't load file
 invalid_file.wav
-[  FAILED  ] WaveAudioProcessorTest.LoadAudioTest (0 ms)
+[       OK ] WaveAudioProcessorTest.LoadAudioTest (25 ms)
 [ RUN      ] WaveAudioProcessorTest.SaveAudioTest
-ERROR: File doesn't exist or otherwise can't load file
-../audio/input/test1.wav
-C:\My Documents\DSPProjects\AudioProcessor_Mod\tests\WaveAudioProcessorTest.cpp:24: Failure
-Value of: processor.loadAudio(TEST_AUDIO_FILE)
-  Actual: false
-Expected: true
+[       OK ] WaveAudioProcessorTest.SaveAudioTest (71 ms)
+[ RUN      ] WaveAudioProcessorTest.GetBufferTest
+[       OK ] WaveAudioProcessorTest.GetBufferTest (24 ms)
+[ RUN      ] WaveAudioProcessorTest.GetSampleRateTest
+[       OK ] WaveAudioProcessorTest.GetSampleRateTest (17 ms)
+[ RUN      ] WaveAudioProcessorTest.GetBitDepthTest
+[       OK ] WaveAudioProcessorTest.GetBitDepthTest (17 ms)
+[----------] 5 tests from WaveAudioProcessorTest (158 ms total)
 
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (158 ms total)
+[  PASSED  ] 5 tests.
 <end of output>
-Test time =   0.12 sec
+Test time =   0.28 sec
 ----------------------------------------------------------
-Test Failed.
-"AudioProcessorTests" end time: Dec 11 21:07 Nepal Standard Time
+Test Passed.
+"AudioProcessorTests" end time: Dec 11 21:20 Nepal Standard Time
 "AudioProcessorTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 11 21:07 Nepal Standard Time
+End testing: Dec 11 21:20 Nepal Standard Time

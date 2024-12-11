@@ -3,7 +3,7 @@
 #include "AudioFile.h" // Ensure this includes the necessary functionality for your audio file handling
 
 // Mock or Temporary Audio File Path
-const std::string TEST_AUDIO_FILE = "../audio/input/test1.wav";
+const std::string TEST_AUDIO_FILE = "../../audio/input/test1.wav";
 
 // Test for loading audio using WaveAudioProcessor
 TEST(WaveAudioProcessorTest, LoadAudioTest) {
