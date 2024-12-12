@@ -1,0 +1,38 @@
+Start testing: Dec 11 21:20 Nepal Standard Time
+----------------------------------------------------------
+1/1 Testing: AudioProcessorTests
+1/1 Test: AudioProcessorTests
+Command: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/tests/AudioProcessorTests.exe"
+Directory: C:/My Documents/DSPProjects/AudioProcessor_Mod/build/tests
+"AudioProcessorTests" start time: Dec 11 21:20 Nepal Standard Time
+Output:
+----------------------------------------------------------
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from WaveAudioProcessorTest
+[ RUN      ] WaveAudioProcessorTest.LoadAudioTest
+ERROR: File doesn't exist or otherwise can't load file
+invalid_file.wav
+[       OK ] WaveAudioProcessorTest.LoadAudioTest (25 ms)
+[ RUN      ] WaveAudioProcessorTest.SaveAudioTest
+[       OK ] WaveAudioProcessorTest.SaveAudioTest (71 ms)
+[ RUN      ] WaveAudioProcessorTest.GetBufferTest
+[       OK ] WaveAudioProcessorTest.GetBufferTest (24 ms)
+[ RUN      ] WaveAudioProcessorTest.GetSampleRateTest
+[       OK ] WaveAudioProcessorTest.GetSampleRateTest (17 ms)
+[ RUN      ] WaveAudioProcessorTest.GetBitDepthTest
+[       OK ] WaveAudioProcessorTest.GetBitDepthTest (17 ms)
+[----------] 5 tests from WaveAudioProcessorTest (158 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (158 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.28 sec
+----------------------------------------------------------
+Test Passed.
+"AudioProcessorTests" end time: Dec 11 21:20 Nepal Standard Time
+"AudioProcessorTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 11 21:20 Nepal Standard Time

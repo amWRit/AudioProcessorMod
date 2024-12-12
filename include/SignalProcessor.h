@@ -3,16 +3,14 @@
 
 #include <vector>
 #include <functional>
-#include "FFTProcessor.h"
-#include "../include/kissfft/kiss_fft.h"
-#include "../include/kissfft/kiss_fftr.h"
+#include "../include/FFTProcessor.h"
 
 // Todo: for now all the methods here are static
 // this could be combined with audioprocessor?
 class SignalProcessor {
     public:
-        // 
-        static std::vector<std::complex<double>> filterFrequencyComponents(
+        // Helper function to filter FFT Output within a given range
+        static std::vector<std::complex<double>> filterFFTOutput(
             const std::vector<std::complex<double>>& fftOutput,
             const std::vector<double>& frequencies,
             double lowFreq, double highFreq);

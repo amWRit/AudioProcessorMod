@@ -1,29 +1,40 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "../include/WaveAudioProcessor.h"
+#include "../include/AudioProcessorFactory.h"
 #include "../include/FFTProcessor.h"
 #include "../include/GuitarIdentifier.h"
 #include "../include/DrumIdentifier.h"
 #include "../include/SignalProcessor.h"
+#include "../include/AudioFile.h"
+#include "../include/Utils.h"
 
 
 int main() {
-    // Create an waveProcessor object (using WaveAudioProcessor)
-    WaveAudioProcessor waveProcessor;
+    std::string inputFilePath = "../audio/input/test1.wav"; // Todo: Ask from user 
 
-    std::string filePath = "../audio/input/test1.wav"; // Todo: Ask from user 
-    if (!waveProcessor.loadAudio(filePath)) {
-        std::cerr << "Failed to load audio file: " << filePath << std::endl;
+    // Get the file extension (e.g., "wav")
+    std::string format = Utils::getFileExtension(inputFilePath);
+    std::transform(format.begin(), format.end(), format.begin(), ::tolower); // Convert to lowercase for consistency
+
+    // Use the format to create an appropriate AudioProcessor
+    auto processor = AudioProcessorFactory::createAudioProcessor(format);
+    if (!processor) {
+        std::cerr << "Unsupported audio format!" << std::endl;
+        return -1;
+    }
+
+    if (!processor->loadAudio(inputFilePath)) {
+        std::cerr << "Failed to load audio file: " << inputFilePath << std::endl;
         return -1;
     }
 
     // audioFile.printSummary();
 
     // Extract buffer and metadata
-    const auto& buffer = waveProcessor.getBuffer();
-    double sampleRate = waveProcessor.getSampleRate();
-    int bitDepth = waveProcessor.getBitDepth();
+    const auto& buffer = processor->getBuffer();
+    double sampleRate = processor->getSampleRate();
+    int bitDepth = processor->getBitDepth();
 
     std::cout << "Audio file loaded successfully!\n";
     std::cout << "Sample Rate: " << sampleRate << " Hz\n";
@@ -148,7 +159,7 @@ int main() {
         guitarIdentifier.getLowGuitar(), guitarIdentifier.getHighGuitar(), 
         fftProcessor
     );
-    waveProcessor.saveAudio("../audio/output/guitarAudio.wav", guitarTimeSignal, sampleRate);
+    processor->saveAudio("../audio/output/guitarAudio.wav", guitarTimeSignal, sampleRate);
 
     //using new extract audio method
     std::vector<double> drumTimeSignal  = SignalProcessor::extractAudioFromChunks(
@@ -156,7 +167,7 @@ int main() {
         drumIdentifier.getLowDrum(), drumIdentifier.getHighDrum(), 
         fftProcessor
     );
-    waveProcessor.saveAudio("../audio/output/drumAudio.wav", drumTimeSignal, sampleRate);
+    processor->saveAudio("../audio/output/drumAudio.wav", drumTimeSignal, sampleRate);
     std::cout << "Separated audio saved as guitarAudio.wav and drumAudio.wav\n";
 
     getchar();
