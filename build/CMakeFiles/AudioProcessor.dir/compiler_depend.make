@@ -4,11 +4,16 @@
 CMakeFiles/AudioProcessor.dir/src/main.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/main.cpp \
   C:/MinGW/include/c++/14.2.0/algorithm \
   C:/MinGW/include/c++/14.2.0/array \
+  C:/MinGW/include/c++/14.2.0/backward/auto_ptr.h \
   C:/MinGW/include/c++/14.2.0/backward/binders.h \
   C:/MinGW/include/c++/14.2.0/bit \
   C:/MinGW/include/c++/14.2.0/bits/algorithmfwd.h \
+  C:/MinGW/include/c++/14.2.0/bits/align.h \
   C:/MinGW/include/c++/14.2.0/bits/alloc_traits.h \
+  C:/MinGW/include/c++/14.2.0/bits/allocated_ptr.h \
   C:/MinGW/include/c++/14.2.0/bits/allocator.h \
+  C:/MinGW/include/c++/14.2.0/bits/atomic_base.h \
+  C:/MinGW/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
   C:/MinGW/include/c++/14.2.0/bits/basic_ios.h \
   C:/MinGW/include/c++/14.2.0/bits/basic_ios.tcc \
   C:/MinGW/include/c++/14.2.0/bits/basic_string.h \
@@ -53,6 +58,9 @@ CMakeFiles/AudioProcessor.dir/src/main.cpp.obj: C:/My\ Documents/DSPProjects/Aud
   C:/MinGW/include/c++/14.2.0/bits/range_access.h \
   C:/MinGW/include/c++/14.2.0/bits/refwrap.h \
   C:/MinGW/include/c++/14.2.0/bits/requires_hosted.h \
+  C:/MinGW/include/c++/14.2.0/bits/shared_ptr.h \
+  C:/MinGW/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+  C:/MinGW/include/c++/14.2.0/bits/shared_ptr_base.h \
   C:/MinGW/include/c++/14.2.0/bits/specfun.h \
   C:/MinGW/include/c++/14.2.0/bits/sstream.tcc \
   C:/MinGW/include/c++/14.2.0/bits/std_abs.h \
@@ -67,6 +75,7 @@ CMakeFiles/AudioProcessor.dir/src/main.cpp.obj: C:/My\ Documents/DSPProjects/Aud
   C:/MinGW/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
   C:/MinGW/include/c++/14.2.0/bits/stl_iterator_base_types.h \
   C:/MinGW/include/c++/14.2.0/bits/stl_pair.h \
+  C:/MinGW/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
   C:/MinGW/include/c++/14.2.0/bits/stl_tempbuf.h \
   C:/MinGW/include/c++/14.2.0/bits/stl_uninitialized.h \
   C:/MinGW/include/c++/14.2.0/bits/stl_vector.h \
@@ -76,6 +85,7 @@ CMakeFiles/AudioProcessor.dir/src/main.cpp.obj: C:/My\ Documents/DSPProjects/Aud
   C:/MinGW/include/c++/14.2.0/bits/string_view.tcc \
   C:/MinGW/include/c++/14.2.0/bits/stringfwd.h \
   C:/MinGW/include/c++/14.2.0/bits/uniform_int_dist.h \
+  C:/MinGW/include/c++/14.2.0/bits/unique_ptr.h \
   C:/MinGW/include/c++/14.2.0/bits/unordered_map.h \
   C:/MinGW/include/c++/14.2.0/bits/uses_allocator.h \
   C:/MinGW/include/c++/14.2.0/bits/uses_allocator_args.h \
@@ -103,6 +113,7 @@ CMakeFiles/AudioProcessor.dir/src/main.cpp.obj: C:/My\ Documents/DSPProjects/Aud
   C:/MinGW/include/c++/14.2.0/ext/aligned_buffer.h \
   C:/MinGW/include/c++/14.2.0/ext/alloc_traits.h \
   C:/MinGW/include/c++/14.2.0/ext/atomicity.h \
+  C:/MinGW/include/c++/14.2.0/ext/concurrence.h \
   C:/MinGW/include/c++/14.2.0/ext/numeric_traits.h \
   C:/MinGW/include/c++/14.2.0/ext/string_conversions.h \
   C:/MinGW/include/c++/14.2.0/ext/type_traits.h \
@@ -115,10 +126,12 @@ CMakeFiles/AudioProcessor.dir/src/main.cpp.obj: C:/My\ Documents/DSPProjects/Aud
   C:/MinGW/include/c++/14.2.0/istream \
   C:/MinGW/include/c++/14.2.0/iterator \
   C:/MinGW/include/c++/14.2.0/limits \
+  C:/MinGW/include/c++/14.2.0/memory \
   C:/MinGW/include/c++/14.2.0/new \
   C:/MinGW/include/c++/14.2.0/ostream \
   C:/MinGW/include/c++/14.2.0/pstl/execution_defs.h \
   C:/MinGW/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+  C:/MinGW/include/c++/14.2.0/pstl/glue_memory_defs.h \
   C:/MinGW/include/c++/14.2.0/pstl/pstl_config.h \
   C:/MinGW/include/c++/14.2.0/sstream \
   C:/MinGW/include/c++/14.2.0/stdexcept \
@@ -207,11 +220,13 @@ CMakeFiles/AudioProcessor.dir/src/main.cpp.obj: C:/My\ Documents/DSPProjects/Aud
   C:/MinGW/x86_64-w64-mingw32/include/wctype.h \
   C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioFile.h \
   C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioProcessor.h \
+  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioProcessorFactory.h \
   C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/DrumIdentifier.h \
   C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/FFTProcessor.h \
   C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/GuitarIdentifier.h \
   C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/Identifier.h \
   C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/SignalProcessor.h \
+  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/Utils.h \
   C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/WaveAudioProcessor.h
 
 
@@ -225,7 +240,13 @@ C:/MinGW/include/c++/14.2.0/algorithm:
 
 C:/MinGW/include/c++/14.2.0/bits/algorithmfwd.h:
 
+C:/MinGW/include/c++/14.2.0/bits/unique_ptr.h:
+
 C:/MinGW/include/c++/14.2.0/array:
+
+C:/MinGW/include/c++/14.2.0/bits/align.h:
+
+C:/MinGW/include/c++/14.2.0/backward/auto_ptr.h:
 
 C:/MinGW/include/c++/14.2.0/tr1/poly_hermite.tcc:
 
@@ -243,6 +264,10 @@ C:/MinGW/include/c++/14.2.0/bits/basic_ios.h:
 
 C:/MinGW/include/c++/14.2.0/bits/alloc_traits.h:
 
+C:/MinGW/include/c++/14.2.0/bits/range_access.h:
+
+C:/MinGW/include/c++/14.2.0/bits/allocated_ptr.h:
+
 C:/MinGW/include/c++/14.2.0/bits/stl_vector.h:
 
 C:/MinGW/include/c++/14.2.0/bits/refwrap.h:
@@ -250,6 +275,18 @@ C:/MinGW/include/c++/14.2.0/bits/refwrap.h:
 C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/SignalProcessor.h:
 
 C:/MinGW/include/c++/14.2.0/bits/allocator.h:
+
+C:/MinGW/include/c++/14.2.0/bits/locale_classes.tcc:
+
+C:/MinGW/include/c++/14.2.0/bits/atomic_base.h:
+
+C:/MinGW/include/c++/14.2.0/bits/shared_ptr.h:
+
+C:/MinGW/include/c++/14.2.0/clocale:
+
+C:/MinGW/include/c++/14.2.0/bits/memoryfwd.h:
+
+C:/MinGW/include/c++/14.2.0/bits/atomic_lockfree_defines.h:
 
 C:/MinGW/include/c++/14.2.0/bits/basic_ios.tcc:
 
@@ -273,10 +310,6 @@ C:/MinGW/include/c++/14.2.0/bits/char_traits.h:
 
 C:/MinGW/include/c++/14.2.0/bits/charconv.h:
 
-C:/MinGW/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
-
-C:/MinGW/include/c++/14.2.0/bits/stl_iterator.h:
-
 C:/MinGW/include/c++/14.2.0/ext/aligned_buffer.h:
 
 C:/MinGW/include/c++/14.2.0/bits/codecvt.h:
@@ -292,10 +325,6 @@ C:/MinGW/include/c++/14.2.0/bits/ios_base.h:
 C:/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
 
 C:/MinGW/include/c++/14.2.0/bits/concept_check.h:
-
-C:/MinGW/include/c++/14.2.0/debug/assertions.h:
-
-C:/MinGW/include/c++/14.2.0/bits/stl_function.h:
 
 C:/MinGW/include/c++/14.2.0/bits/cpp_type_traits.h:
 
@@ -321,13 +350,9 @@ C:/MinGW/include/c++/14.2.0/bits/exception.h:
 
 C:/MinGW/include/c++/14.2.0/bits/exception_ptr.h:
 
-C:/MinGW/include/c++/14.2.0/bits/stl_algobase.h:
-
 C:/MinGW/include/c++/14.2.0/bits/hashtable.h:
 
 C:/MinGW/include/c++/14.2.0/bits/fstream.tcc:
-
-C:/MinGW/include/c++/14.2.0/bits/stl_construct.h:
 
 C:/MinGW/include/c++/14.2.0/bits/functexcept.h:
 
@@ -337,27 +362,21 @@ C:/MinGW/include/c++/14.2.0/bits/hash_bytes.h:
 
 C:/MinGW/include/c++/14.2.0/bits/specfun.h:
 
-C:/MinGW/include/c++/14.2.0/bits/stl_bvector.h:
-
 C:/MinGW/include/c++/14.2.0/stdlib.h:
 
 C:/MinGW/include/c++/14.2.0/bits/hashtable_policy.h:
 
+C:/MinGW/include/c++/14.2.0/bits/shared_ptr_atomic.h:
+
 C:/MinGW/include/c++/14.2.0/bits/invoke.h:
 
 C:/MinGW/include/c++/14.2.0/bits/istream.tcc:
-
-C:/MinGW/include/c++/14.2.0/bits/locale_classes.tcc:
 
 C:/MinGW/include/c++/14.2.0/bits/locale_facets.h:
 
 C:/MinGW/include/c++/14.2.0/bits/stream_iterator.h:
 
 C:/MinGW/include/c++/14.2.0/bits/localefwd.h:
-
-C:/MinGW/include/c++/14.2.0/clocale:
-
-C:/MinGW/include/c++/14.2.0/bits/memoryfwd.h:
 
 C:/MinGW/include/c++/14.2.0/bits/predefined_ops.h:
 
@@ -373,9 +392,9 @@ C:/MinGW/include/c++/14.2.0/bits/ostream.tcc:
 
 C:/MinGW/include/c++/14.2.0/bits/ostream_insert.h:
 
-C:/MinGW/include/c++/14.2.0/bits/range_access.h:
-
 C:/MinGW/include/c++/14.2.0/bits/requires_hosted.h:
+
+C:/MinGW/include/c++/14.2.0/bits/shared_ptr_base.h:
 
 C:/MinGW/include/c++/14.2.0/bits/sstream.tcc:
 
@@ -387,13 +406,29 @@ C:/MinGW/include/c++/14.2.0/bits/std_function.h:
 
 C:/MinGW/include/c++/14.2.0/bits/stl_algo.h:
 
+C:/MinGW/include/c++/14.2.0/bits/stl_algobase.h:
+
+C:/MinGW/include/c++/14.2.0/bits/stl_bvector.h:
+
+C:/MinGW/include/c++/14.2.0/bits/stl_construct.h:
+
+C:/MinGW/include/c++/14.2.0/debug/assertions.h:
+
+C:/MinGW/include/c++/14.2.0/bits/stl_function.h:
+
 C:/MinGW/include/c++/14.2.0/functional:
 
 C:/MinGW/include/c++/14.2.0/bits/stl_heap.h:
 
+C:/MinGW/include/c++/14.2.0/bits/stl_iterator.h:
+
+C:/MinGW/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
+
 C:/MinGW/include/c++/14.2.0/bits/stl_iterator_base_types.h:
 
 C:/MinGW/include/c++/14.2.0/bits/stl_pair.h:
+
+C:/MinGW/include/c++/14.2.0/bits/stl_raw_storage_iter.h:
 
 C:/MinGW/include/c++/14.2.0/bits/stl_tempbuf.h:
 
@@ -459,6 +494,8 @@ C:/MinGW/include/c++/14.2.0/cwctype:
 
 C:/MinGW/include/c++/14.2.0/debug/debug.h:
 
+C:/MinGW/include/c++/14.2.0/ext/concurrence.h:
+
 C:/MinGW/include/c++/14.2.0/exception:
 
 C:/MinGW/include/c++/14.2.0/ext/alloc_traits.h:
@@ -487,15 +524,19 @@ C:/MinGW/x86_64-w64-mingw32/include/corecrt_startup.h:
 
 C:/MinGW/include/c++/14.2.0/limits:
 
-C:/MinGW/include/c++/14.2.0/new:
-
 C:/MinGW/include/c++/14.2.0/ostream:
+
+C:/MinGW/include/c++/14.2.0/memory:
+
+C:/MinGW/include/c++/14.2.0/new:
 
 C:/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
 C:/MinGW/include/c++/14.2.0/pstl/execution_defs.h:
 
 C:/MinGW/include/c++/14.2.0/pstl/glue_algorithm_defs.h:
+
+C:/MinGW/include/c++/14.2.0/pstl/glue_memory_defs.h:
 
 C:/MinGW/include/c++/14.2.0/pstl/pstl_config.h:
 
@@ -518,6 +559,8 @@ C:/MinGW/include/c++/14.2.0/tr1/exp_integral.tcc:
 C:/MinGW/include/c++/14.2.0/tr1/gamma.tcc:
 
 C:/MinGW/include/c++/14.2.0/tr1/hypergeometric.tcc:
+
+C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/Utils.h:
 
 C:/MinGW/include/c++/14.2.0/tr1/legendre_function.tcc:
 
@@ -634,6 +677,8 @@ C:/MinGW/x86_64-w64-mingw32/include/sys/types.h:
 C:/MinGW/x86_64-w64-mingw32/include/time.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/wchar.h:
+
+C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioProcessorFactory.h:
 
 C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/FFTProcessor.h:
 

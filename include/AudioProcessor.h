@@ -8,7 +8,9 @@ public:
     virtual bool loadAudio(const std::string& filePath) = 0;
 
     // Pure virtual method for saving audio, must be implemented in derived classes
-    virtual void saveAudio(const std::string& filename, const std::vector<double>& timeDomainSignal, double sampleRate) = 0;
+    virtual void saveAudio(const std::string& filename, 
+                            const std::vector<double>& timeDomainSignal, 
+                            double sampleRate) = 0;
 
     // Pure virtual method for returning buffer, must be implemented in derived classes
     virtual const std::vector<std::vector<double>>& getBuffer() const = 0;

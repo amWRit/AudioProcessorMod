@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20241212-1156-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.31.2"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-42I6GD7"
+	OSRelease=" Personal"
+	OSVersion=" (Build 19045)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="14"
+	ModelName=""
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="15340"
+	TotalPhysicalMemory="7916"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2712"
+	>
+	<Testing>
+		<StartDateTime>Dec 12 19:09 Nepal Standard Time</StartDateTime>
+		<StartTestTime>1734009855</StartTestTime>
+		<TestList>
+			<Test>./tests/AudioProcessorTests</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>AudioProcessorTests</Name>
+			<Path>./tests</Path>
+			<FullName>./tests/AudioProcessorTests</FullName>
+			<FullCommandLine>"C:\My Documents\DSPProjects\AudioProcessor_Mod\build\tests\AudioProcessorTests.exe"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.227267</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>"C:\My Documents\DSPProjects\AudioProcessor_Mod\build\tests\AudioProcessorTests.exe"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyVk8FOwzAMhu95Ct/YDq1UaTBA4jC0sQOITS2IQ1WhsLosUppUSdry+LjdGC3SROubY//5/EdxfHeKBMJSKaE+4RIcWmchMzqHoE3AlsKhz2LvFAmspf7g8lBHVQmjVY6KetF5ZfGnuXfpG69wUaZCb43eobXavFCRxRC+PkMbyZke/0nztD1uFasw3IS38CAkQqrRqgsa5UvQQNqAdns0tbAIO94UJEkho1YmVMWlSN+bxK95ReRDbB4HkmESXENup4Nmjn6Ojy7/Z/UUMJnNB7PW6O7LLEMzmNVTkK+bMayI54XEkDscw+uriDkb5U+4JRZuP8phR/PLG/lBSRhckRKcdlxO2bB1cMiNl+pasbi7bWe3DAxXfoOad1Bkc7uIotWyeZqj1GffNcw4Nw==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Dec 12 19:09 Nepal Standard Time</EndDateTime>
+		<EndTestTime>1734009855</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

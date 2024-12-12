@@ -145,8 +145,27 @@ CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj: \
  C:/MinGW/include/c++/14.2.0/bits/stl_vector.h \
  C:/MinGW/include/c++/14.2.0/bits/stl_bvector.h \
  C:/MinGW/include/c++/14.2.0/bits/vector.tcc \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/WaveAudioProcessor.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioProcessorFactory.h \
+ C:/MinGW/include/c++/14.2.0/memory \
+ C:/MinGW/include/c++/14.2.0/bits/stl_tempbuf.h \
+ C:/MinGW/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
+ C:/MinGW/include/c++/14.2.0/bits/align.h \
+ C:/MinGW/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
+ C:/MinGW/x86_64-w64-mingw32/include/stdint.h \
+ C:/MinGW/include/c++/14.2.0/bits/unique_ptr.h \
+ C:/MinGW/include/c++/14.2.0/bits/shared_ptr.h \
+ C:/MinGW/include/c++/14.2.0/bits/shared_ptr_base.h \
+ C:/MinGW/include/c++/14.2.0/bits/allocated_ptr.h \
+ C:/MinGW/include/c++/14.2.0/ext/aligned_buffer.h \
+ C:/MinGW/include/c++/14.2.0/ext/concurrence.h \
+ C:/MinGW/include/c++/14.2.0/bits/shared_ptr_atomic.h \
+ C:/MinGW/include/c++/14.2.0/bits/atomic_base.h \
+ C:/MinGW/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
+ C:/MinGW/include/c++/14.2.0/backward/auto_ptr.h \
+ C:/MinGW/include/c++/14.2.0/pstl/glue_memory_defs.h \
+ C:/MinGW/include/c++/14.2.0/pstl/execution_defs.h \
  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioProcessor.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/WaveAudioProcessor.h \
  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioFile.h \
  C:/MinGW/include/c++/14.2.0/cassert \
  C:/MinGW/x86_64-w64-mingw32/include/assert.h \
@@ -162,7 +181,6 @@ CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj: \
  C:/MinGW/include/c++/14.2.0/bits/unordered_map.h \
  C:/MinGW/include/c++/14.2.0/bits/hashtable.h \
  C:/MinGW/include/c++/14.2.0/bits/hashtable_policy.h \
- C:/MinGW/include/c++/14.2.0/ext/aligned_buffer.h \
  C:/MinGW/include/c++/14.2.0/bits/enable_special_members.h \
  C:/MinGW/include/c++/14.2.0/bits/node_handle.h \
  C:/MinGW/include/c++/14.2.0/bits/erase_if.h \
@@ -173,12 +191,8 @@ CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj: \
  C:/MinGW/include/c++/14.2.0/bits/algorithmfwd.h \
  C:/MinGW/include/c++/14.2.0/bits/stl_heap.h \
  C:/MinGW/include/c++/14.2.0/bits/uniform_int_dist.h \
- C:/MinGW/include/c++/14.2.0/bits/stl_tempbuf.h \
  C:/MinGW/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
- C:/MinGW/include/c++/14.2.0/pstl/execution_defs.h \
  C:/MinGW/include/c++/14.2.0/limits C:/MinGW/include/c++/14.2.0/cstdint \
- C:/MinGW/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
- C:/MinGW/x86_64-w64-mingw32/include/stdint.h \
  C:/MinGW/include/c++/14.2.0/cmath \
  C:/MinGW/x86_64-w64-mingw32/include/math.h \
  C:/MinGW/include/c++/14.2.0/bits/specfun.h \
@@ -204,4 +218,6 @@ CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj: \
  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/SignalProcessor.h \
  C:/MinGW/include/c++/14.2.0/functional \
  C:/MinGW/include/c++/14.2.0/bits/std_function.h \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/FFTProcessor.h
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/FFTProcessor.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioFile.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/Utils.h

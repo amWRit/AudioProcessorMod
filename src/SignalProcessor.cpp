@@ -4,21 +4,21 @@
 #include "../include/SignalProcessor.h"
 #include "../include/FFTProcessor.h"
 
-// Helper method to filter frequencies within a given range
-std::vector<std::complex<double>> SignalProcessor::filterFrequencyComponents(
+// Helper method to filter FFT Output within a given range
+std::vector<std::complex<double>> SignalProcessor::filterFFTOutput(
     const std::vector<std::complex<double>>& fftOutput,
     const std::vector<double>& frequencies,
     double lowFreq, double highFreq) {
 
-    std::vector<std::complex<double>> filteredOutput(fftOutput.size());
+    std::vector<std::complex<double>> filteredFFTOutput(fftOutput.size());
     for (size_t i = 0; i < frequencies.size(); ++i) {
         if (frequencies[i] >= lowFreq && frequencies[i] <= highFreq) {
-            filteredOutput[i] = fftOutput[i];
+            filteredFFTOutput[i] = fftOutput[i];
         } else {
-            filteredOutput[i] = std::complex<double>(0.0, 0.0);
+            filteredFFTOutput[i] = std::complex<double>(0.0, 0.0);
         }
     }
-    return filteredOutput;
+    return filteredFFTOutput;
 }
 
 // Helper function to compare two signals
@@ -89,8 +89,8 @@ std::vector<double> SignalProcessor::extractAudioFromChunks(
         fftProcessor.performFFT(chunk);
         const std::vector<std::complex<double>>& fftOutput = fftProcessor.getFFTOutput();
         std::vector<double> frequencies = calculateFrequencies(fftSize, sampleRate, fftOutput);
-        std::vector<std::complex<double>> filteredOutput = filterFrequencyComponents(fftOutput, frequencies, lowFreq, highFreq);
-        std::vector<double> ifftOutput = fftProcessor.performIFFT(filteredOutput);  // Call the existing IFFT method
+        std::vector<std::complex<double>> filteredFFTOutput = filterFFTOutput(fftOutput, frequencies, lowFreq, highFreq);
+        std::vector<double> ifftOutput = fftProcessor.performIFFT(filteredFFTOutput);  // Call the existing IFFT method
         extractedSignal.insert(extractedSignal.end(), ifftOutput.begin(), ifftOutput.end());
     }
 
