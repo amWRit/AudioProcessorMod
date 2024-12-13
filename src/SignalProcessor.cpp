@@ -110,7 +110,7 @@ std::vector<double> SignalProcessor::extractAudioFromChunks(
         const std::vector<std::complex<double>>& fftOutput = fftProcessor.getFFTOutput();
         std::vector<double> frequencies = calculateFrequencies(fftSize, sampleRate, fftOutput);
         
-        std::cout << "Extraction started...:\n";
+        //std::cout << "Extraction started...:\n";
 
         std::vector<std::complex<double>> filteredFFTOutput = filterFFTOutput(fftOutput, frequencies, lowFreq, highFreq);
         
@@ -124,10 +124,11 @@ std::vector<double> SignalProcessor::extractAudioFromChunks(
 
         std::vector<double> ifftOutput = fftProcessor.performIFFT(kissFilteredFFTOutput);  // Call the existing IFFT method
         
-        std::cout << "Filtered ifft output:\n";
-        for (size_t i = 0; i < ifftOutput.size(); ++i) {
-            std::cout << "ifft output: " << ifftOutput[i] << "\n";
-        }
+        // For printing purposes
+        // std::cout << "Filtered ifft output:\n";
+        // for (size_t i = 0; i < ifftOutput.size(); ++i) {
+        //     std::cout << "ifft output: " << ifftOutput[i] << "\n";
+        // }
 
         extractedSignal.insert(extractedSignal.end(), ifftOutput.begin(), ifftOutput.end());
     }
