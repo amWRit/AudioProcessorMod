@@ -112,10 +112,9 @@ AudioProcessorTests_EXTERNAL_OBJECTS =
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioProcessorTest.cpp.obj
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/build.make
-tests/AudioProcessorTests.exe: lib/libgtest.a
-tests/AudioProcessorTests.exe: lib/libgtest_main.a
+tests/AudioProcessorTests.exe: lib/libgtest_main.dll.a
 tests/AudioProcessorTests.exe: libAudioProcessorLib.a
-tests/AudioProcessorTests.exe: lib/libgtest.a
+tests/AudioProcessorTests.exe: lib/libgtest.dll.a
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/linkLibs.rsp
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/objects1.rsp
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/link.txt

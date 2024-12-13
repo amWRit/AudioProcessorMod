@@ -333,6 +333,30 @@ src/FFTProcessorMod.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.s
 .PHONY : src/FFTProcessorMod.cpp.s
 
+src/FFTProcessor_old.obj: src/FFTProcessor_old.cpp.obj
+.PHONY : src/FFTProcessor_old.obj
+
+# target to build an object file
+src/FFTProcessor_old.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj
+.PHONY : src/FFTProcessor_old.cpp.obj
+
+src/FFTProcessor_old.i: src/FFTProcessor_old.cpp.i
+.PHONY : src/FFTProcessor_old.i
+
+# target to preprocess a source file
+src/FFTProcessor_old.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.i
+.PHONY : src/FFTProcessor_old.cpp.i
+
+src/FFTProcessor_old.s: src/FFTProcessor_old.cpp.s
+.PHONY : src/FFTProcessor_old.s
+
+# target to generate assembly for a file
+src/FFTProcessor_old.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.s
+.PHONY : src/FFTProcessor_old.cpp.s
+
 src/GuitarIdentifier.obj: src/GuitarIdentifier.cpp.obj
 .PHONY : src/GuitarIdentifier.obj
 
@@ -380,6 +404,30 @@ src/Identifier.s: src/Identifier.cpp.s
 src/Identifier.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.s
 .PHONY : src/Identifier.cpp.s
+
+src/Settings.obj: src/Settings.cpp.obj
+.PHONY : src/Settings.obj
+
+# target to build an object file
+src/Settings.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.obj
+.PHONY : src/Settings.cpp.obj
+
+src/Settings.i: src/Settings.cpp.i
+.PHONY : src/Settings.i
+
+# target to preprocess a source file
+src/Settings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.i
+.PHONY : src/Settings.cpp.i
+
+src/Settings.s: src/Settings.cpp.s
+.PHONY : src/Settings.s
+
+# target to generate assembly for a file
+src/Settings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.s
+.PHONY : src/Settings.cpp.s
 
 src/SignalProcessor.obj: src/SignalProcessor.cpp.obj
 .PHONY : src/SignalProcessor.obj
@@ -461,12 +509,18 @@ help:
 	@echo ... src/FFTProcessorMod.obj
 	@echo ... src/FFTProcessorMod.i
 	@echo ... src/FFTProcessorMod.s
+	@echo ... src/FFTProcessor_old.obj
+	@echo ... src/FFTProcessor_old.i
+	@echo ... src/FFTProcessor_old.s
 	@echo ... src/GuitarIdentifier.obj
 	@echo ... src/GuitarIdentifier.i
 	@echo ... src/GuitarIdentifier.s
 	@echo ... src/Identifier.obj
 	@echo ... src/Identifier.i
 	@echo ... src/Identifier.s
+	@echo ... src/Settings.obj
+	@echo ... src/Settings.i
+	@echo ... src/Settings.s
 	@echo ... src/SignalProcessor.obj
 	@echo ... src/SignalProcessor.i
 	@echo ... src/SignalProcessor.s

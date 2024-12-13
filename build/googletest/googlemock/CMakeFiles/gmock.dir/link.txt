@@ -1,2 +1,3 @@
-C:\MinGW\bin\ar.exe qc ..\..\lib\libgmock.a "CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
-C:\MinGW\bin\ranlib.exe ..\..\lib\libgmock.a
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\gmock.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\gmock.dir/objects.a @CMakeFiles\gmock.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -shared -o ..\..\bin\libgmock.dll -Wl,--out-implib,..\..\lib\libgmock.dll.a -Wl,--major-image-version,1,--minor-image-version,15 -Wl,--whole-archive CMakeFiles\gmock.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\gmock.dir\linkLibs.rsp

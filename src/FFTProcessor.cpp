@@ -1,87 +1,76 @@
 #include "../include/FFTProcessor.h"
 #include <cmath>
 #include <iostream>
-
-#ifndef M_PI
-    #define M_PI 3.14159265358979323846
-#endif
+#include <complex>
 
 FFTProcessor::FFTProcessor(size_t fftSize, double sampleRate) 
     : fftSize(fftSize), 
       sampleRate(sampleRate), 
       in(fftSize), 
-      out(fftSize) {}
+      out(fftSize) {
 
-FFTProcessor::~FFTProcessor() {}
-
-void FFTProcessor::performFFT(const std::vector<double>& channelData) {
-    // Prepare input vector
-    in.clear();
-    for (size_t i = 0; i < fftSize; ++i) {
-        double real = (i < channelData.size()) ? channelData[i] : 0.0;
-        in.emplace_back(real, 0.0); // Fill imaginary part as 0.0
-    }
-
-    // Call FFT function
-    fft(in, false);
-    out = in;
+    // Allocate FFT configuration
+    cfg = kiss_fft_alloc(fftSize, 0, nullptr, nullptr);
+    cfgInverse = kiss_fft_alloc(fftSize, 1, nullptr, nullptr); // Inverse FFT
 }
 
-std::vector<double> FFTProcessor::performIFFT(const std::vector<std::complex<double>>& fftOutput) {
-    // Copy FFT output to input
-    in = fftOutput;
+FFTProcessor::~FFTProcessor() {
+    // Free FFT configuration
+    free(cfg);
+}
 
-    // Call IFFT function
-    fft(in, true);
+// uses kiss_fft
+void FFTProcessor::performFFT(const std::vector<double>& channelData) {
+    // Resize channelData to fit FFT size (padding or truncating)
+    std::vector<double> data = channelData;
+    if (data.size() < fftSize) {
+        data.resize(fftSize, 0.0);
+    } else {
+        data = std::vector<double>(data.begin(), data.begin() + fftSize);
+    }
 
-    // Extract real part and normalize
-    std::vector<double> timeDomainData(fftSize);
+    // Fill the input array for FFT (real part, imaginary part is 0) - WHY?
     for (size_t i = 0; i < fftSize; ++i) {
-        timeDomainData[i] = in[i].real() / fftSize;
+        in[i].r = data[i];
+        in[i].i = 0.0;
+    }
+
+    // Perform FFT
+    kiss_fft(cfg, in.data(), out.data());
+}
+
+std::vector<double> FFTProcessor::performIFFT(const std::vector<kiss_fft_cpx>& fftOutput) {
+    std::vector<double> timeDomainData(fftSize);
+    std::vector<kiss_fft_cpx> ifftOutput(fftSize);
+    // Perform Inverse FFT
+    kiss_fft(cfgInverse, fftOutput.data(), ifftOutput.data());
+    // Normalize and extract real part
+    for (size_t i = 0; i < fftSize; ++i) {
+        timeDomainData[i] = ifftOutput[i].r / fftSize; // Normalize by FFT size
     }
     return timeDomainData;
 }
 
-const std::vector<std::complex<double>>& FFTProcessor::getFFTOutput() const {
-    return out;
+
+const std::vector<std::complex<double>> FFTProcessor::getFFTOutput() const {
+    // Create a vector to hold the converted std::complex<double> values
+    std::vector<std::complex<double>> complexOutput;
+
+    // Convert each kiss_fft_cpx to std::complex<double>
+    for (size_t i = 0; i < fftSize; ++i) {
+        complexOutput.push_back(std::complex<double>(out[i].r, out[i].i));
+    }
+
+    return complexOutput;
 }
 
-void FFTProcessor::fft(std::vector<std::complex<double>>& data, bool inverse) {
-    // Example of Cooley-Tukey FFT algorithm (simplified, power-of-2 only)
-    size_t N = data.size();
-    if (N <= 1) return;
+std::vector<kiss_fft_cpx> FFTProcessor::convertToKissFFTFormat(const std::vector<std::complex<double>>& complexVec) {
+    std::vector<kiss_fft_cpx> kissFFTVec(complexVec.size());
 
-    // Bit-reversal permutation
-    for (size_t i = 1, j = 0; i < N; ++i) {
-        size_t bit = N >> 1;
-        while (j >= bit) {
-            j -= bit;
-            bit >>= 1;
-        }
-        j += bit;
-        if (i < j) std::swap(data[i], data[j]);
+    for (size_t i = 0; i < complexVec.size(); ++i) {
+        kissFFTVec[i].r = complexVec[i].real();
+        kissFFTVec[i].i = complexVec[i].imag();
     }
 
-    // FFT computation
-    for (size_t len = 2; len <= N; len <<= 1) {
-        double angle = 2 * M_PI / len * (inverse ? -1 : 1);
-        std::complex<double> wlen(cos(angle), sin(angle));
-        for (size_t i = 0; i < N; i += len) {
-            std::complex<double> w(1);
-            for (size_t j = 0; j < len / 2; ++j) {
-                std::complex<double> u = data[i + j];
-                std::complex<double> v = data[i + j + len / 2] * w;
-                data[i + j] = u + v;
-                data[i + j + len / 2] = u - v;
-                w *= wlen;
-            }
-        }
-    }
-
-    // Scaling for IFFT
-    if (inverse) {
-        for (auto& x : data) {
-            x /= N;
-        }
-    }
+    return kissFFTVec;
 }

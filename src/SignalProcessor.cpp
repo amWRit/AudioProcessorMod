@@ -1,8 +1,29 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "../include/Settings.h"
 #include "../include/SignalProcessor.h"
 #include "../include/FFTProcessor.h"
+#include <complex>
+
+// Utility method to filter frequencies within a given range
+std::vector<double> filterFrequencies(const std::vector<double>& frequencies,
+                                    const std::vector<double>& magnitudes,
+                                    double lowRange,
+                                    double highRange,
+                                    double magnitudeThreshold) {
+    std::vector<double> filteredFrequencies;
+
+    for (size_t i = 0; i < frequencies.size(); ++i) {
+        if (magnitudes[i] > magnitudeThreshold) { // Suppress noise
+            if (frequencies[i] >= lowRange && frequencies[i] <= highRange) {
+                filteredFrequencies.push_back(frequencies[i]);
+            }
+        }
+    }
+
+    return filteredFrequencies;
+}
 
 // Helper method to filter FFT Output within a given range
 std::vector<std::complex<double>> SignalProcessor::filterFFTOutput(
@@ -72,25 +93,42 @@ std::vector<double> SignalProcessor::calculateMagnitudes(
 // filters frequencies within a range, performs ifft, then reconstructs into filtered signal
 std::vector<double> SignalProcessor::extractAudioFromChunks(
     const std::vector<double>& originalSignal, 
-    size_t fftSize, 
     double sampleRate,
     double lowFreq, 
-    double highFreq,
-    FFTProcessor& fftProcessor  // Pass FFTProcessor as a reference
-) {
+    double highFreq) {
     size_t signalSize = originalSignal.size();
     std::vector<double> extractedSignal;
+    size_t fftSize = Settings::getFFTSize();
     size_t numChunks = signalSize / fftSize;
 
     // Process each chunk of fftSize
     for (size_t i = 0; i < numChunks; ++i) {
         std::vector<double> chunk(originalSignal.begin() + i * fftSize, 
                                    originalSignal.begin() + (i + 1) * fftSize);
+        FFTProcessor fftProcessor(fftSize, sampleRate);
         fftProcessor.performFFT(chunk);
         const std::vector<std::complex<double>>& fftOutput = fftProcessor.getFFTOutput();
         std::vector<double> frequencies = calculateFrequencies(fftSize, sampleRate, fftOutput);
+        
+        std::cout << "Extraction started...:\n";
+
         std::vector<std::complex<double>> filteredFFTOutput = filterFFTOutput(fftOutput, frequencies, lowFreq, highFreq);
-        std::vector<double> ifftOutput = fftProcessor.performIFFT(filteredFFTOutput);  // Call the existing IFFT method
+        
+        // std::cout << "Filtered fft output:\n";
+        // for (size_t i = 0; i < filteredFFTOutput.size(); ++i) {
+        //     std::cout << "fft output: " << filteredFFTOutput[i] << "\n";
+        // }
+
+        // Convert filteredFFTOutput (std::vector<std::complex<double>>) to std::vector<kiss_fft_cpx>
+        std::vector<kiss_fft_cpx> kissFilteredFFTOutput = fftProcessor.convertToKissFFTFormat(filteredFFTOutput);
+
+        std::vector<double> ifftOutput = fftProcessor.performIFFT(kissFilteredFFTOutput);  // Call the existing IFFT method
+        
+        std::cout << "Filtered ifft output:\n";
+        for (size_t i = 0; i < ifftOutput.size(); ++i) {
+            std::cout << "ifft output: " << ifftOutput[i] << "\n";
+        }
+
         extractedSignal.insert(extractedSignal.end(), ifftOutput.begin(), ifftOutput.end());
     }
 

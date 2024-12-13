@@ -693,3 +693,1835 @@ events:
       Running the CXX compiler's linker: "Configured with: ../configure --prefix=/R/winlibs_staging_ucrt64/inst_gcc-14.2.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2' --with-tune=generic --enable-checking=release --enable-threads=posix --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --with-stabs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-mpfr=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-gmp=/c/Prog/winlibs_staging_ucrt/custombuilt64 --with-isl=/c/Prog/winlibs_staging_ucrt/custombuilt64 --disable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs_staging_ucrt64/gcc-14.2.0/build_mingw/mingw-w64 CFLAGS='-D__USE_MINGW_ANSI_STDIO=0 -I/c/Prog/winlibs_staging_ucrt/custombuilt64/include/libdl-win32   -march=nocona -msahf -mtune=generic -O2 -Wno-error=format' CXXFLAGS='-D__USE_MINGW_ANSI_STDIO=0 -Wno-int-conversion  -march=nocona -msahf -mtune=generic -O2' LDFLAGS='-pthread -Wl,--no-insert-timestamp -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware' LD=/c/Prog/winlibs_staging_ucrt/custombuilt64/share/binutils/bin/ld.exe" "--version"
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:35 (check_include_file)"
+    checks:
+      - "Looking for alloca.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rh81ol"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rh81ol"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ALLOCA_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rh81ol'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_5506f/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5506f.dir\\build.make CMakeFiles/cmTC_5506f.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rh81ol'
+        Building C object CMakeFiles/cmTC_5506f.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_5506f.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rh81ol\\CheckIncludeFile.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rh81ol\\CheckIncludeFile.c:1:10: fatal error: alloca.h: No such file or directory
+            1 | #include <alloca.h>
+              |          ^~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_5506f.dir\\build.make:80: CMakeFiles/cmTC_5506f.dir/CheckIncludeFile.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rh81ol'
+        mingw32-make: *** [Makefile:132: cmTC_5506f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:36 (check_include_file)"
+    checks:
+      - "Looking for altivec.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-c7lb4y"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-c7lb4y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ALTIVEC_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-c7lb4y'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_284cc/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_284cc.dir\\build.make CMakeFiles/cmTC_284cc.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-c7lb4y'
+        Building C object CMakeFiles/cmTC_284cc.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_284cc.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c7lb4y\\CheckIncludeFile.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c7lb4y\\CheckIncludeFile.c:1:10: fatal error: altivec.h: No such file or directory
+            1 | #include <altivec.h>
+              |          ^~~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_284cc.dir\\build.make:80: CMakeFiles/cmTC_284cc.dir/CheckIncludeFile.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-c7lb4y'
+        mingw32-make: *** [Makefile:132: cmTC_284cc/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:37 (check_include_file)"
+    checks:
+      - "Looking for c_asm.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-7qw7rp"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-7qw7rp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_C_ASM_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-7qw7rp'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_e521f/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_e521f.dir\\build.make CMakeFiles/cmTC_e521f.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-7qw7rp'
+        Building C object CMakeFiles/cmTC_e521f.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_e521f.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qw7rp\\CheckIncludeFile.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7qw7rp\\CheckIncludeFile.c:1:10: fatal error: c_asm.h: No such file or directory
+            1 | #include <c_asm.h>
+              |          ^~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_e521f.dir\\build.make:80: CMakeFiles/cmTC_e521f.dir/CheckIncludeFile.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-7qw7rp'
+        mingw32-make: *** [Makefile:132: cmTC_e521f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:38 (check_include_file)"
+    checks:
+      - "Looking for dlfcn.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-579alx"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-579alx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-579alx'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_d8d5d/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d8d5d.dir\\build.make CMakeFiles/cmTC_d8d5d.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-579alx'
+        Building C object CMakeFiles/cmTC_d8d5d.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_d8d5d.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-579alx\\CheckIncludeFile.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-579alx\\CheckIncludeFile.c:1:10: fatal error: dlfcn.h: No such file or directory
+            1 | #include <dlfcn.h>
+              |          ^~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_d8d5d.dir\\build.make:80: CMakeFiles/cmTC_d8d5d.dir/CheckIncludeFile.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-579alx'
+        mingw32-make: *** [Makefile:132: cmTC_d8d5d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:39 (check_include_file)"
+    checks:
+      - "Looking for intrinsics.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-q0imjj"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-q0imjj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_INTRINSICS_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-q0imjj'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_7763d/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7763d.dir\\build.make CMakeFiles/cmTC_7763d.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-q0imjj'
+        Building C object CMakeFiles/cmTC_7763d.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_7763d.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q0imjj\\CheckIncludeFile.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q0imjj\\CheckIncludeFile.c:1:10: fatal error: intrinsics.h: No such file or directory
+            1 | #include <intrinsics.h>
+              |          ^~~~~~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_7763d.dir\\build.make:80: CMakeFiles/cmTC_7763d.dir/CheckIncludeFile.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-q0imjj'
+        mingw32-make: *** [Makefile:132: cmTC_7763d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:40 (check_include_file)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9inko4"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9inko4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9inko4'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f56f9/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f56f9.dir\\build.make CMakeFiles/cmTC_f56f9.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9inko4'
+        Building C object CMakeFiles/cmTC_f56f9.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_f56f9.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9inko4\\CheckIncludeFile.c"
+        Linking C executable cmTC_f56f9.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f56f9.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f56f9.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_f56f9.dir/objects.a @CMakeFiles\\cmTC_f56f9.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_f56f9.dir/objects.a -Wl,--no-whole-archive -o cmTC_f56f9.exe -Wl,--out-implib,libcmTC_f56f9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_f56f9.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9inko4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:41 (check_include_file)"
+    checks:
+      - "Looking for libintl.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-iolr11"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-iolr11"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_LIBINTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-iolr11'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_62fb2/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_62fb2.dir\\build.make CMakeFiles/cmTC_62fb2.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-iolr11'
+        Building C object CMakeFiles/cmTC_62fb2.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_62fb2.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iolr11\\CheckIncludeFile.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iolr11\\CheckIncludeFile.c:1:10: fatal error: libintl.h: No such file or directory
+            1 | #include <libintl.h>
+              |          ^~~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_62fb2.dir\\build.make:80: CMakeFiles/cmTC_62fb2.dir/CheckIncludeFile.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-iolr11'
+        mingw32-make: *** [Makefile:132: cmTC_62fb2/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:42 (check_include_file)"
+    checks:
+      - "Looking for limits.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-h5xiyo"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-h5xiyo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_LIMITS_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-h5xiyo'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_5c994/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5c994.dir\\build.make CMakeFiles/cmTC_5c994.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-h5xiyo'
+        Building C object CMakeFiles/cmTC_5c994.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_5c994.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h5xiyo\\CheckIncludeFile.c"
+        Linking C executable cmTC_5c994.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5c994.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_5c994.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_5c994.dir/objects.a @CMakeFiles\\cmTC_5c994.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_5c994.dir/objects.a -Wl,--no-whole-archive -o cmTC_5c994.exe -Wl,--out-implib,libcmTC_5c994.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_5c994.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-h5xiyo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:43 (check_include_file)"
+    checks:
+      - "Looking for mach/mach_time.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-0a0xof"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-0a0xof"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_MACH_MACH_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-0a0xof'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_5ae7f/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5ae7f.dir\\build.make CMakeFiles/cmTC_5ae7f.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-0a0xof'
+        Building C object CMakeFiles/cmTC_5ae7f.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_5ae7f.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0a0xof\\CheckIncludeFile.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0a0xof\\CheckIncludeFile.c:1:10: fatal error: mach/mach_time.h: No such file or directory
+            1 | #include <mach/mach_time.h>
+              |          ^~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_5ae7f.dir\\build.make:80: CMakeFiles/cmTC_5ae7f.dir/CheckIncludeFile.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-0a0xof'
+        mingw32-make: *** [Makefile:132: cmTC_5ae7f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:44 (check_include_file)"
+    checks:
+      - "Looking for malloc.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-spfi3u"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-spfi3u"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_MALLOC_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-spfi3u'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_d298a/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d298a.dir\\build.make CMakeFiles/cmTC_d298a.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-spfi3u'
+        Building C object CMakeFiles/cmTC_d298a.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_d298a.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-spfi3u\\CheckIncludeFile.c"
+        Linking C executable cmTC_d298a.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_d298a.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_d298a.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_d298a.dir/objects.a @CMakeFiles\\cmTC_d298a.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_d298a.dir/objects.a -Wl,--no-whole-archive -o cmTC_d298a.exe -Wl,--out-implib,libcmTC_d298a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_d298a.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-spfi3u'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:45 (check_include_file)"
+    checks:
+      - "Looking for memory.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-w911i8"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-w911i8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_MEMORY_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-w911i8'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f5877/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f5877.dir\\build.make CMakeFiles/cmTC_f5877.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-w911i8'
+        Building C object CMakeFiles/cmTC_f5877.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_f5877.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w911i8\\CheckIncludeFile.c"
+        Linking C executable cmTC_f5877.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f5877.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f5877.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_f5877.dir/objects.a @CMakeFiles\\cmTC_f5877.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_f5877.dir/objects.a -Wl,--no-whole-archive -o cmTC_f5877.exe -Wl,--out-implib,libcmTC_f5877.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_f5877.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-w911i8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:46 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-t9jxbz"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-t9jxbz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-t9jxbz'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a1753/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a1753.dir\\build.make CMakeFiles/cmTC_a1753.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-t9jxbz'
+        Building C object CMakeFiles/cmTC_a1753.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_a1753.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t9jxbz\\CheckIncludeFile.c"
+        Linking C executable cmTC_a1753.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_a1753.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_a1753.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_a1753.dir/objects.a @CMakeFiles\\cmTC_a1753.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_a1753.dir/objects.a -Wl,--no-whole-archive -o cmTC_a1753.exe -Wl,--out-implib,libcmTC_a1753.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_a1753.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-t9jxbz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:47 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gz56u0"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gz56u0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gz56u0'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c7f48/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c7f48.dir\\build.make CMakeFiles/cmTC_c7f48.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gz56u0'
+        Building C object CMakeFiles/cmTC_c7f48.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_c7f48.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gz56u0\\CheckIncludeFile.c"
+        Linking C executable cmTC_c7f48.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c7f48.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c7f48.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_c7f48.dir/objects.a @CMakeFiles\\cmTC_c7f48.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_c7f48.dir/objects.a -Wl,--no-whole-archive -o cmTC_c7f48.exe -Wl,--out-implib,libcmTC_c7f48.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_c7f48.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gz56u0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:48 (check_include_file)"
+    checks:
+      - "Looking for stdlib.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-945c1s"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-945c1s"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-945c1s'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_8e130/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8e130.dir\\build.make CMakeFiles/cmTC_8e130.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-945c1s'
+        Building C object CMakeFiles/cmTC_8e130.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_8e130.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-945c1s\\CheckIncludeFile.c"
+        Linking C executable cmTC_8e130.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_8e130.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_8e130.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_8e130.dir/objects.a @CMakeFiles\\cmTC_8e130.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_8e130.dir/objects.a -Wl,--no-whole-archive -o cmTC_8e130.exe -Wl,--out-implib,libcmTC_8e130.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_8e130.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-945c1s'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:49 (check_include_file)"
+    checks:
+      - "Looking for string.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-lmbz62"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-lmbz62"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STRING_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-lmbz62'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_4f5c9/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4f5c9.dir\\build.make CMakeFiles/cmTC_4f5c9.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-lmbz62'
+        Building C object CMakeFiles/cmTC_4f5c9.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_4f5c9.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lmbz62\\CheckIncludeFile.c"
+        Linking C executable cmTC_4f5c9.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_4f5c9.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_4f5c9.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_4f5c9.dir/objects.a @CMakeFiles\\cmTC_4f5c9.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_4f5c9.dir/objects.a -Wl,--no-whole-archive -o cmTC_4f5c9.exe -Wl,--out-implib,libcmTC_4f5c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_4f5c9.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-lmbz62'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:50 (check_include_file)"
+    checks:
+      - "Looking for strings.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-g7yiu4"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-g7yiu4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-g7yiu4'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_94737/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_94737.dir\\build.make CMakeFiles/cmTC_94737.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-g7yiu4'
+        Building C object CMakeFiles/cmTC_94737.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_94737.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g7yiu4\\CheckIncludeFile.c"
+        Linking C executable cmTC_94737.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_94737.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_94737.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_94737.dir/objects.a @CMakeFiles\\cmTC_94737.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_94737.dir/objects.a -Wl,--no-whole-archive -o cmTC_94737.exe -Wl,--out-implib,libcmTC_94737.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_94737.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-g7yiu4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:51 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-r4p6cp"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-r4p6cp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-r4p6cp'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_390e8/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_390e8.dir\\build.make CMakeFiles/cmTC_390e8.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-r4p6cp'
+        Building C object CMakeFiles/cmTC_390e8.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_390e8.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r4p6cp\\CheckIncludeFile.c"
+        Linking C executable cmTC_390e8.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_390e8.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_390e8.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_390e8.dir/objects.a @CMakeFiles\\cmTC_390e8.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_390e8.dir/objects.a -Wl,--no-whole-archive -o cmTC_390e8.exe -Wl,--out-implib,libcmTC_390e8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_390e8.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-r4p6cp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:52 (check_include_file)"
+    checks:
+      - "Looking for sys/time.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-3dns44"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-3dns44"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-3dns44'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_6e5d7/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6e5d7.dir\\build.make CMakeFiles/cmTC_6e5d7.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-3dns44'
+        Building C object CMakeFiles/cmTC_6e5d7.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_6e5d7.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dns44\\CheckIncludeFile.c"
+        Linking C executable cmTC_6e5d7.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6e5d7.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_6e5d7.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_6e5d7.dir/objects.a @CMakeFiles\\cmTC_6e5d7.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_6e5d7.dir/objects.a -Wl,--no-whole-archive -o cmTC_6e5d7.exe -Wl,--out-implib,libcmTC_6e5d7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_6e5d7.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-3dns44'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:53 (check_include_file)"
+    checks:
+      - "Looking for sys/stat.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rqcay5"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rqcay5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_STAT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rqcay5'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_33f89/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_33f89.dir\\build.make CMakeFiles/cmTC_33f89.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rqcay5'
+        Building C object CMakeFiles/cmTC_33f89.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_33f89.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rqcay5\\CheckIncludeFile.c"
+        Linking C executable cmTC_33f89.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_33f89.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_33f89.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_33f89.dir/objects.a @CMakeFiles\\cmTC_33f89.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_33f89.dir/objects.a -Wl,--no-whole-archive -o cmTC_33f89.exe -Wl,--out-implib,libcmTC_33f89.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_33f89.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rqcay5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:54 (check_include_file)"
+    checks:
+      - "Looking for sys/sysctl.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-xgwtgz"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-xgwtgz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_SYSCTL_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-xgwtgz'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_244aa/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_244aa.dir\\build.make CMakeFiles/cmTC_244aa.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-xgwtgz'
+        Building C object CMakeFiles/cmTC_244aa.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_244aa.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgwtgz\\CheckIncludeFile.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgwtgz\\CheckIncludeFile.c:1:10: fatal error: sys/sysctl.h: No such file or directory
+            1 | #include <sys/sysctl.h>
+              |          ^~~~~~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_244aa.dir\\build.make:80: CMakeFiles/cmTC_244aa.dir/CheckIncludeFile.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-xgwtgz'
+        mingw32-make: *** [Makefile:132: cmTC_244aa/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:55 (check_include_file)"
+    checks:
+      - "Looking for time.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-kf4tz2"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-kf4tz2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-kf4tz2'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_4ed20/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4ed20.dir\\build.make CMakeFiles/cmTC_4ed20.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-kf4tz2'
+        Building C object CMakeFiles/cmTC_4ed20.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_4ed20.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kf4tz2\\CheckIncludeFile.c"
+        Linking C executable cmTC_4ed20.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_4ed20.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_4ed20.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_4ed20.dir/objects.a @CMakeFiles\\cmTC_4ed20.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_4ed20.dir/objects.a -Wl,--no-whole-archive -o cmTC_4ed20.exe -Wl,--out-implib,libcmTC_4ed20.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_4ed20.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-kf4tz2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:56 (check_include_file)"
+    checks:
+      - "Looking for uintptr.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4e47jv"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4e47jv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_UINTPTR_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4e47jv'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a7a7b/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a7a7b.dir\\build.make CMakeFiles/cmTC_a7a7b.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4e47jv'
+        Building C object CMakeFiles/cmTC_a7a7b.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_a7a7b.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4e47jv\\CheckIncludeFile.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4e47jv\\CheckIncludeFile.c:1:10: fatal error: uintptr.h: No such file or directory
+            1 | #include <uintptr.h>
+              |          ^~~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_a7a7b.dir\\build.make:80: CMakeFiles/cmTC_a7a7b.dir/CheckIncludeFile.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4e47jv'
+        mingw32-make: *** [Makefile:132: cmTC_a7a7b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "fftw3/CMakeLists.txt:57 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-joghwb"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-joghwb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-joghwb'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_b8e2d/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b8e2d.dir\\build.make CMakeFiles/cmTC_b8e2d.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-joghwb'
+        Building C object CMakeFiles/cmTC_b8e2d.dir/CheckIncludeFile.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_b8e2d.dir\\CheckIncludeFile.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-joghwb\\CheckIncludeFile.c"
+        Linking C executable cmTC_b8e2d.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b8e2d.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_b8e2d.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_b8e2d.dir/objects.a @CMakeFiles\\cmTC_b8e2d.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_b8e2d.dir/objects.a -Wl,--no-whole-archive -o cmTC_b8e2d.exe -Wl,--out-implib,libcmTC_b8e2d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_b8e2d.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-joghwb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckPrototypeDefinition.cmake:107 (try_compile)"
+      - "fftw3/CMakeLists.txt:63 (check_prototype_definition)"
+    checks:
+      - "Checking prototype drand48 for HAVE_DECL_DRAND48"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-cgzzt9"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-cgzzt9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DECL_DRAND48"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-cgzzt9'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a49e5/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a49e5.dir\\build.make CMakeFiles/cmTC_a49e5.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-cgzzt9'
+        Building C object CMakeFiles/cmTC_a49e5.dir/CheckPrototypeDefinition.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_a49e5.dir\\CheckPrototypeDefinition.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cgzzt9\\CheckPrototypeDefinition.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cgzzt9\\CheckPrototypeDefinition.c: In function 'checkSymbol':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cgzzt9\\CheckPrototypeDefinition.c:10:26: error: 'drand48' undeclared (first use in this function); did you mean 'srand'?
+           10 |   cmakeRequireSymbol(0, &drand48);
+              |                          ^~~~~~~
+              |                          srand
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cgzzt9\\CheckPrototypeDefinition.c:10:26: note: each undeclared identifier is reported only once for each function it appears in
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_a49e5.dir\\build.make:80: CMakeFiles/cmTC_a49e5.dir/CheckPrototypeDefinition.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-cgzzt9'
+        mingw32-make: *** [Makefile:132: cmTC_a49e5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckPrototypeDefinition.cmake:107 (try_compile)"
+      - "fftw3/CMakeLists.txt:64 (check_prototype_definition)"
+    checks:
+      - "Checking prototype srand48 for HAVE_DECL_SRAND48"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-ja5kfr"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-ja5kfr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DECL_SRAND48"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-ja5kfr'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_9bc66/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9bc66.dir\\build.make CMakeFiles/cmTC_9bc66.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-ja5kfr'
+        Building C object CMakeFiles/cmTC_9bc66.dir/CheckPrototypeDefinition.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_9bc66.dir\\CheckPrototypeDefinition.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ja5kfr\\CheckPrototypeDefinition.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ja5kfr\\CheckPrototypeDefinition.c: In function 'checkSymbol':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ja5kfr\\CheckPrototypeDefinition.c:10:26: error: 'srand48' undeclared (first use in this function); did you mean 'srand'?
+           10 |   cmakeRequireSymbol(0, &srand48);
+              |                          ^~~~~~~
+              |                          srand
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ja5kfr\\CheckPrototypeDefinition.c:10:26: note: each undeclared identifier is reported only once for each function it appears in
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ja5kfr\\CheckPrototypeDefinition.c: In function 'srand48':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ja5kfr\\CheckPrototypeDefinition.c:15:10: error: 'return' with a value, in function returning void [-Wreturn-mismatch]
+           15 |   return 0;
+              |          ^
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ja5kfr\\CheckPrototypeDefinition.c:14:6: note: declared here
+           14 | void srand48(long int seedval) {
+              |      ^~~~~~~
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_9bc66.dir\\build.make:80: CMakeFiles/cmTC_9bc66.dir/CheckPrototypeDefinition.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-ja5kfr'
+        mingw32-make: *** [Makefile:132: cmTC_9bc66/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckPrototypeDefinition.cmake:107 (try_compile)"
+      - "fftw3/CMakeLists.txt:65 (check_prototype_definition)"
+    checks:
+      - "Checking prototype cosl for HAVE_DECL_COSL"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-48canj"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-48canj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DECL_COSL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-48canj'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_b1292/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b1292.dir\\build.make CMakeFiles/cmTC_b1292.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-48canj'
+        Building C object CMakeFiles/cmTC_b1292.dir/CheckPrototypeDefinition.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_b1292.dir\\CheckPrototypeDefinition.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-48canj\\CheckPrototypeDefinition.c"
+        Linking C executable cmTC_b1292.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b1292.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_b1292.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_b1292.dir/objects.a @CMakeFiles\\cmTC_b1292.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_b1292.dir/objects.a -Wl,--no-whole-archive -o cmTC_b1292.exe -Wl,--out-implib,libcmTC_b1292.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_b1292.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-48canj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckPrototypeDefinition.cmake:107 (try_compile)"
+      - "fftw3/CMakeLists.txt:66 (check_prototype_definition)"
+    checks:
+      - "Checking prototype sinl for HAVE_DECL_SINL"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-hztbkd"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-hztbkd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DECL_SINL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-hztbkd'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_9e98e/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9e98e.dir\\build.make CMakeFiles/cmTC_9e98e.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-hztbkd'
+        Building C object CMakeFiles/cmTC_9e98e.dir/CheckPrototypeDefinition.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_9e98e.dir\\CheckPrototypeDefinition.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hztbkd\\CheckPrototypeDefinition.c"
+        Linking C executable cmTC_9e98e.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9e98e.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9e98e.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_9e98e.dir/objects.a @CMakeFiles\\cmTC_9e98e.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_9e98e.dir/objects.a -Wl,--no-whole-archive -o cmTC_9e98e.exe -Wl,--out-implib,libcmTC_9e98e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_9e98e.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-hztbkd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckPrototypeDefinition.cmake:107 (try_compile)"
+      - "fftw3/CMakeLists.txt:67 (check_prototype_definition)"
+    checks:
+      - "Checking prototype memalign for HAVE_DECL_MEMALIGN"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-n0081q"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-n0081q"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DECL_MEMALIGN"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-n0081q'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_0e0cb/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0e0cb.dir\\build.make CMakeFiles/cmTC_0e0cb.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-n0081q'
+        Building C object CMakeFiles/cmTC_0e0cb.dir/CheckPrototypeDefinition.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_0e0cb.dir\\CheckPrototypeDefinition.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n0081q\\CheckPrototypeDefinition.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n0081q\\CheckPrototypeDefinition.c: In function 'checkSymbol':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n0081q\\CheckPrototypeDefinition.c:10:26: error: 'memalign' undeclared (first use in this function)
+           10 |   cmakeRequireSymbol(0, &memalign);
+              |                          ^~~~~~~~
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n0081q\\CheckPrototypeDefinition.c:10:26: note: each undeclared identifier is reported only once for each function it appears in
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_0e0cb.dir\\build.make:80: CMakeFiles/cmTC_0e0cb.dir/CheckPrototypeDefinition.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-n0081q'
+        mingw32-make: *** [Makefile:132: cmTC_0e0cb/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckPrototypeDefinition.cmake:107 (try_compile)"
+      - "fftw3/CMakeLists.txt:68 (check_prototype_definition)"
+    checks:
+      - "Checking prototype posix_memalign for HAVE_DECL_POSIX_MEMALIGN"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-30ryhx"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-30ryhx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DECL_POSIX_MEMALIGN"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-30ryhx'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_cb867/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_cb867.dir\\build.make CMakeFiles/cmTC_cb867.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-30ryhx'
+        Building C object CMakeFiles/cmTC_cb867.dir/CheckPrototypeDefinition.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_cb867.dir\\CheckPrototypeDefinition.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-30ryhx\\CheckPrototypeDefinition.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-30ryhx\\CheckPrototypeDefinition.c: In function 'checkSymbol':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-30ryhx\\CheckPrototypeDefinition.c:10:26: error: 'posix_memalign' undeclared (first use in this function)
+           10 |   cmakeRequireSymbol(0, &posix_memalign);
+              |                          ^~~~~~~~~~~~~~
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-30ryhx\\CheckPrototypeDefinition.c:10:26: note: each undeclared identifier is reported only once for each function it appears in
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_cb867.dir\\build.make:80: CMakeFiles/cmTC_cb867.dir/CheckPrototypeDefinition.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-30ryhx'
+        mingw32-make: *** [Makefile:132: cmTC_cb867/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:71 (check_symbol_exists)"
+    checks:
+      - "Looking for clock_gettime"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rd36sh"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rd36sh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_CLOCK_GETTIME"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rd36sh'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f8765/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f8765.dir\\build.make CMakeFiles/cmTC_f8765.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rd36sh'
+        Building C object CMakeFiles/cmTC_f8765.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_f8765.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rd36sh\\CheckSymbolExists.c"
+        Linking C executable cmTC_f8765.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f8765.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f8765.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_f8765.dir/objects.a @CMakeFiles\\cmTC_f8765.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_f8765.dir/objects.a -Wl,--no-whole-archive -o cmTC_f8765.exe -Wl,--out-implib,libcmTC_f8765.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_f8765.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-rd36sh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:72 (check_symbol_exists)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-voyz4u"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-voyz4u"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-voyz4u'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_bc5e8/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_bc5e8.dir\\build.make CMakeFiles/cmTC_bc5e8.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-voyz4u'
+        Building C object CMakeFiles/cmTC_bc5e8.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_bc5e8.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-voyz4u\\CheckSymbolExists.c"
+        Linking C executable cmTC_bc5e8.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_bc5e8.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_bc5e8.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_bc5e8.dir/objects.a @CMakeFiles\\cmTC_bc5e8.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_bc5e8.dir/objects.a -Wl,--no-whole-archive -o cmTC_bc5e8.exe -Wl,--out-implib,libcmTC_bc5e8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_bc5e8.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-voyz4u'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:73 (check_symbol_exists)"
+    checks:
+      - "Looking for getpagesize"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4dj3rx"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4dj3rx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GETPAGESIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4dj3rx'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_4e0b2/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4e0b2.dir\\build.make CMakeFiles/cmTC_4e0b2.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4dj3rx'
+        Building C object CMakeFiles/cmTC_4e0b2.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_4e0b2.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dj3rx\\CheckSymbolExists.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dj3rx\\CheckSymbolExists.c: In function 'main':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dj3rx\\CheckSymbolExists.c:8:19: error: 'getpagesize' undeclared (first use in this function)
+            8 |   return ((int*)(&getpagesize))[argc];
+              |                   ^~~~~~~~~~~
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4dj3rx\\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_4e0b2.dir\\build.make:80: CMakeFiles/cmTC_4e0b2.dir/CheckSymbolExists.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4dj3rx'
+        mingw32-make: *** [Makefile:132: cmTC_4e0b2/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:74 (check_symbol_exists)"
+    checks:
+      - "Looking for drand48"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-6ffnvw"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-6ffnvw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DRAND48"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-6ffnvw'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_d27ff/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d27ff.dir\\build.make CMakeFiles/cmTC_d27ff.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-6ffnvw'
+        Building C object CMakeFiles/cmTC_d27ff.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_d27ff.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ffnvw\\CheckSymbolExists.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ffnvw\\CheckSymbolExists.c: In function 'main':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ffnvw\\CheckSymbolExists.c:8:19: error: 'drand48' undeclared (first use in this function); did you mean 'srand'?
+            8 |   return ((int*)(&drand48))[argc];
+              |                   ^~~~~~~
+              |                   srand
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ffnvw\\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_d27ff.dir\\build.make:80: CMakeFiles/cmTC_d27ff.dir/CheckSymbolExists.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-6ffnvw'
+        mingw32-make: *** [Makefile:132: cmTC_d27ff/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:75 (check_symbol_exists)"
+    checks:
+      - "Looking for srand48"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-ljl4bo"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-ljl4bo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SRAND48"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-ljl4bo'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_b93ca/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b93ca.dir\\build.make CMakeFiles/cmTC_b93ca.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-ljl4bo'
+        Building C object CMakeFiles/cmTC_b93ca.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_b93ca.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ljl4bo\\CheckSymbolExists.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ljl4bo\\CheckSymbolExists.c: In function 'main':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ljl4bo\\CheckSymbolExists.c:8:19: error: 'srand48' undeclared (first use in this function); did you mean 'srand'?
+            8 |   return ((int*)(&srand48))[argc];
+              |                   ^~~~~~~
+              |                   srand
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ljl4bo\\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_b93ca.dir\\build.make:80: CMakeFiles/cmTC_b93ca.dir/CheckSymbolExists.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-ljl4bo'
+        mingw32-make: *** [Makefile:132: cmTC_b93ca/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:76 (check_symbol_exists)"
+    checks:
+      - "Looking for memalign"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-c7j0tc"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-c7j0tc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_MEMALIGN"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-c7j0tc'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_a3f85/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a3f85.dir\\build.make CMakeFiles/cmTC_a3f85.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-c7j0tc'
+        Building C object CMakeFiles/cmTC_a3f85.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_a3f85.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c7j0tc\\CheckSymbolExists.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c7j0tc\\CheckSymbolExists.c: In function 'main':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c7j0tc\\CheckSymbolExists.c:8:19: error: 'memalign' undeclared (first use in this function)
+            8 |   return ((int*)(&memalign))[argc];
+              |                   ^~~~~~~~
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c7j0tc\\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_a3f85.dir\\build.make:80: CMakeFiles/cmTC_a3f85.dir/CheckSymbolExists.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-c7j0tc'
+        mingw32-make: *** [Makefile:132: cmTC_a3f85/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:77 (check_symbol_exists)"
+    checks:
+      - "Looking for posix_memalign"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-7cmuk9"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-7cmuk9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_POSIX_MEMALIGN"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-7cmuk9'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_0b910/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0b910.dir\\build.make CMakeFiles/cmTC_0b910.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-7cmuk9'
+        Building C object CMakeFiles/cmTC_0b910.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_0b910.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7cmuk9\\CheckSymbolExists.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7cmuk9\\CheckSymbolExists.c: In function 'main':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7cmuk9\\CheckSymbolExists.c:8:19: error: 'posix_memalign' undeclared (first use in this function)
+            8 |   return ((int*)(&posix_memalign))[argc];
+              |                   ^~~~~~~~~~~~~~
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7cmuk9\\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_0b910.dir\\build.make:80: CMakeFiles/cmTC_0b910.dir/CheckSymbolExists.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-7cmuk9'
+        mingw32-make: *** [Makefile:132: cmTC_0b910/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:78 (check_symbol_exists)"
+    checks:
+      - "Looking for mach_absolute_time"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9gwmhc"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9gwmhc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_MACH_ABSOLUTE_TIME"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9gwmhc'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_99e95/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_99e95.dir\\build.make CMakeFiles/cmTC_99e95.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9gwmhc'
+        Building C object CMakeFiles/cmTC_99e95.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_99e95.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gwmhc\\CheckSymbolExists.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gwmhc\\CheckSymbolExists.c:2:10: fatal error: mach/mach_time.h: No such file or directory
+            2 | #include <mach/mach_time.h>
+              |          ^~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_99e95.dir\\build.make:80: CMakeFiles/cmTC_99e95.dir/CheckSymbolExists.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9gwmhc'
+        mingw32-make: *** [Makefile:132: cmTC_99e95/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:79 (check_symbol_exists)"
+    checks:
+      - "Looking for alloca"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-a54des"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-a54des"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ALLOCA"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-a54des'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_d1ffe/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d1ffe.dir\\build.make CMakeFiles/cmTC_d1ffe.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-a54des'
+        Building C object CMakeFiles/cmTC_d1ffe.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_d1ffe.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a54des\\CheckSymbolExists.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a54des\\CheckSymbolExists.c:2:10: fatal error: alloca.h: No such file or directory
+            2 | #include <alloca.h>
+              |          ^~~~~~~~~~
+        compilation terminated.
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_d1ffe.dir\\build.make:80: CMakeFiles/cmTC_d1ffe.dir/CheckSymbolExists.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-a54des'
+        mingw32-make: *** [Makefile:132: cmTC_d1ffe/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:82 (check_symbol_exists)"
+    checks:
+      - "Looking for alloca"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-km6a64"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-km6a64"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ALLOCA"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-km6a64'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_8d4fa/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8d4fa.dir\\build.make CMakeFiles/cmTC_8d4fa.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-km6a64'
+        Building C object CMakeFiles/cmTC_8d4fa.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_8d4fa.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-km6a64\\CheckSymbolExists.c"
+        Linking C executable cmTC_8d4fa.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_8d4fa.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_8d4fa.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_8d4fa.dir/objects.a @CMakeFiles\\cmTC_8d4fa.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_8d4fa.dir/objects.a -Wl,--no-whole-archive -o cmTC_8d4fa.exe -Wl,--out-implib,libcmTC_8d4fa.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_8d4fa.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-km6a64'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:84 (check_symbol_exists)"
+    checks:
+      - "Looking for isnan"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-wzsit0"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-wzsit0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_ISNAN"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-wzsit0'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_4f0c4/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4f0c4.dir\\build.make CMakeFiles/cmTC_4f0c4.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-wzsit0'
+        Building C object CMakeFiles/cmTC_4f0c4.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_4f0c4.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wzsit0\\CheckSymbolExists.c"
+        Linking C executable cmTC_4f0c4.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_4f0c4.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_4f0c4.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_4f0c4.dir/objects.a @CMakeFiles\\cmTC_4f0c4.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_4f0c4.dir/objects.a -Wl,--no-whole-archive -o cmTC_4f0c4.exe -Wl,--out-implib,libcmTC_4f0c4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_4f0c4.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-wzsit0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:85 (check_symbol_exists)"
+    checks:
+      - "Looking for snprintf"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4yd334"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4yd334"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SNPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4yd334'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c983f/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c983f.dir\\build.make CMakeFiles/cmTC_c983f.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4yd334'
+        Building C object CMakeFiles/cmTC_c983f.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_c983f.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4yd334\\CheckSymbolExists.c"
+        Linking C executable cmTC_c983f.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c983f.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c983f.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_c983f.dir/objects.a @CMakeFiles\\cmTC_c983f.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_c983f.dir/objects.a -Wl,--no-whole-archive -o cmTC_c983f.exe -Wl,--out-implib,libcmTC_c983f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_c983f.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4yd334'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:86 (check_symbol_exists)"
+    checks:
+      - "Looking for strchr"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-3upoe2"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-3upoe2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STRCHR"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-3upoe2'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_9428b/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_9428b.dir\\build.make CMakeFiles/cmTC_9428b.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-3upoe2'
+        Building C object CMakeFiles/cmTC_9428b.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_9428b.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3upoe2\\CheckSymbolExists.c"
+        Linking C executable cmTC_9428b.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9428b.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9428b.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_9428b.dir/objects.a @CMakeFiles\\cmTC_9428b.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_9428b.dir/objects.a -Wl,--no-whole-archive -o cmTC_9428b.exe -Wl,--out-implib,libcmTC_9428b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_9428b.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-3upoe2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:87 (check_symbol_exists)"
+    checks:
+      - "Looking for sysctl"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-s4akk1"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-s4akk1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYSCTL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-s4akk1'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_ab9c8/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ab9c8.dir\\build.make CMakeFiles/cmTC_ab9c8.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-s4akk1'
+        Building C object CMakeFiles/cmTC_ab9c8.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_ab9c8.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4akk1\\CheckSymbolExists.c"
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4akk1\\CheckSymbolExists.c: In function 'main':
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4akk1\\CheckSymbolExists.c:8:19: error: 'sysctl' undeclared (first use in this function)
+            8 |   return ((int*)(&sysctl))[argc];
+              |                   ^~~~~~
+        C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s4akk1\\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_ab9c8.dir\\build.make:80: CMakeFiles/cmTC_ab9c8.dir/CheckSymbolExists.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-s4akk1'
+        mingw32-make: *** [Makefile:132: cmTC_ab9c8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:92 (check_symbol_exists)"
+    checks:
+      - "Looking for cosl"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-b7d8uo"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-b7d8uo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_COSL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-b7d8uo'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_ec9ac/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ec9ac.dir\\build.make CMakeFiles/cmTC_ec9ac.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-b7d8uo'
+        Building C object CMakeFiles/cmTC_ec9ac.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_ec9ac.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b7d8uo\\CheckSymbolExists.c"
+        Linking C executable cmTC_ec9ac.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ec9ac.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ec9ac.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_ec9ac.dir/objects.a @CMakeFiles\\cmTC_ec9ac.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_ec9ac.dir/objects.a -Wl,--no-whole-archive -o cmTC_ec9ac.exe -Wl,--out-implib,libcmTC_ec9ac.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_ec9ac.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-b7d8uo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fftw3/CMakeLists.txt:93 (check_symbol_exists)"
+    checks:
+      - "Looking for sinl"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-byknh2"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-byknh2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SINL"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-byknh2'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_23ae5/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_23ae5.dir\\build.make CMakeFiles/cmTC_23ae5.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-byknh2'
+        Building C object CMakeFiles/cmTC_23ae5.dir/CheckSymbolExists.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_23ae5.dir\\CheckSymbolExists.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-byknh2\\CheckSymbolExists.c"
+        Linking C executable cmTC_23ae5.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_23ae5.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_23ae5.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_23ae5.dir/objects.a @CMakeFiles\\cmTC_23ae5.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_23ae5.dir/objects.a -Wl,--no-whole-archive -o cmTC_23ae5.exe -Wl,--out-implib,libcmTC_23ae5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_23ae5.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-byknh2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fftw3/CMakeLists.txt:96 (check_type_size)"
+    checks:
+      - "Check size of float"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4wuydx"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4wuydx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_FLOAT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4wuydx'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_5ec27/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5ec27.dir\\build.make CMakeFiles/cmTC_5ec27.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4wuydx'
+        Building C object CMakeFiles/cmTC_5ec27.dir/SIZEOF_FLOAT.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_5ec27.dir\\SIZEOF_FLOAT.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4wuydx\\SIZEOF_FLOAT.c"
+        Linking C executable cmTC_5ec27.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5ec27.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_5ec27.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_5ec27.dir/objects.a @CMakeFiles\\cmTC_5ec27.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_5ec27.dir/objects.a -Wl,--no-whole-archive -o cmTC_5ec27.exe -Wl,--out-implib,libcmTC_5ec27.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_5ec27.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-4wuydx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fftw3/CMakeLists.txt:97 (check_type_size)"
+    checks:
+      - "Check size of double"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-cn53dz"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-cn53dz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_DOUBLE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-cn53dz'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_82a04/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_82a04.dir\\build.make CMakeFiles/cmTC_82a04.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-cn53dz'
+        Building C object CMakeFiles/cmTC_82a04.dir/SIZEOF_DOUBLE.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_82a04.dir\\SIZEOF_DOUBLE.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cn53dz\\SIZEOF_DOUBLE.c"
+        Linking C executable cmTC_82a04.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_82a04.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_82a04.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_82a04.dir/objects.a @CMakeFiles\\cmTC_82a04.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_82a04.dir/objects.a -Wl,--no-whole-archive -o cmTC_82a04.exe -Wl,--out-implib,libcmTC_82a04.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_82a04.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-cn53dz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fftw3/CMakeLists.txt:98 (check_type_size)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-fs7i0j"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-fs7i0j"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_INT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-fs7i0j'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_26799/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_26799.dir\\build.make CMakeFiles/cmTC_26799.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-fs7i0j'
+        Building C object CMakeFiles/cmTC_26799.dir/SIZEOF_INT.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_26799.dir\\SIZEOF_INT.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fs7i0j\\SIZEOF_INT.c"
+        Linking C executable cmTC_26799.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_26799.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_26799.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_26799.dir/objects.a @CMakeFiles\\cmTC_26799.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_26799.dir/objects.a -Wl,--no-whole-archive -o cmTC_26799.exe -Wl,--out-implib,libcmTC_26799.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_26799.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-fs7i0j'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fftw3/CMakeLists.txt:99 (check_type_size)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gzwa41"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gzwa41"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_LONG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gzwa41'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_2014a/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2014a.dir\\build.make CMakeFiles/cmTC_2014a.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gzwa41'
+        Building C object CMakeFiles/cmTC_2014a.dir/SIZEOF_LONG.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_2014a.dir\\SIZEOF_LONG.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gzwa41\\SIZEOF_LONG.c"
+        Linking C executable cmTC_2014a.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_2014a.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_2014a.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_2014a.dir/objects.a @CMakeFiles\\cmTC_2014a.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_2014a.dir/objects.a -Wl,--no-whole-archive -o cmTC_2014a.exe -Wl,--out-implib,libcmTC_2014a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_2014a.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gzwa41'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fftw3/CMakeLists.txt:100 (check_type_size)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9hzwhk"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9hzwhk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_LONG_LONG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9hzwhk'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_1d502/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1d502.dir\\build.make CMakeFiles/cmTC_1d502.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9hzwhk'
+        Building C object CMakeFiles/cmTC_1d502.dir/SIZEOF_LONG_LONG.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_1d502.dir\\SIZEOF_LONG_LONG.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9hzwhk\\SIZEOF_LONG_LONG.c"
+        Linking C executable cmTC_1d502.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_1d502.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_1d502.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_1d502.dir/objects.a @CMakeFiles\\cmTC_1d502.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_1d502.dir/objects.a -Wl,--no-whole-archive -o cmTC_1d502.exe -Wl,--out-implib,libcmTC_1d502.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_1d502.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-9hzwhk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fftw3/CMakeLists.txt:101 (check_type_size)"
+    checks:
+      - "Check size of unsigned int"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-1mi86g"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-1mi86g"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_UNSIGNED_INT"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-1mi86g'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_2bb4c/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2bb4c.dir\\build.make CMakeFiles/cmTC_2bb4c.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-1mi86g'
+        Building C object CMakeFiles/cmTC_2bb4c.dir/SIZEOF_UNSIGNED_INT.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_2bb4c.dir\\SIZEOF_UNSIGNED_INT.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1mi86g\\SIZEOF_UNSIGNED_INT.c"
+        Linking C executable cmTC_2bb4c.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_2bb4c.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_2bb4c.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_2bb4c.dir/objects.a @CMakeFiles\\cmTC_2bb4c.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_2bb4c.dir/objects.a -Wl,--no-whole-archive -o cmTC_2bb4c.exe -Wl,--out-implib,libcmTC_2bb4c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_2bb4c.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-1mi86g'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fftw3/CMakeLists.txt:102 (check_type_size)"
+    checks:
+      - "Check size of unsigned long"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-jzjf0c"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-jzjf0c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_UNSIGNED_LONG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-jzjf0c'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_6da23/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6da23.dir\\build.make CMakeFiles/cmTC_6da23.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-jzjf0c'
+        Building C object CMakeFiles/cmTC_6da23.dir/SIZEOF_UNSIGNED_LONG.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_6da23.dir\\SIZEOF_UNSIGNED_LONG.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jzjf0c\\SIZEOF_UNSIGNED_LONG.c"
+        Linking C executable cmTC_6da23.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6da23.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_6da23.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_6da23.dir/objects.a @CMakeFiles\\cmTC_6da23.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_6da23.dir/objects.a -Wl,--no-whole-archive -o cmTC_6da23.exe -Wl,--out-implib,libcmTC_6da23.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_6da23.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-jzjf0c'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fftw3/CMakeLists.txt:103 (check_type_size)"
+    checks:
+      - "Check size of unsigned long long"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-xfdqnx"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-xfdqnx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_UNSIGNED_LONG_LONG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-xfdqnx'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_3e193/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_3e193.dir\\build.make CMakeFiles/cmTC_3e193.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-xfdqnx'
+        Building C object CMakeFiles/cmTC_3e193.dir/SIZEOF_UNSIGNED_LONG_LONG.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_3e193.dir\\SIZEOF_UNSIGNED_LONG_LONG.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xfdqnx\\SIZEOF_UNSIGNED_LONG_LONG.c"
+        Linking C executable cmTC_3e193.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_3e193.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_3e193.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_3e193.dir/objects.a @CMakeFiles\\cmTC_3e193.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_3e193.dir/objects.a -Wl,--no-whole-archive -o cmTC_3e193.exe -Wl,--out-implib,libcmTC_3e193.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_3e193.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-xfdqnx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fftw3/CMakeLists.txt:104 (check_type_size)"
+    checks:
+      - "Check size of size_t"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-46uvmm"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-46uvmm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_SIZE_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-46uvmm'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_b7658/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b7658.dir\\build.make CMakeFiles/cmTC_b7658.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-46uvmm'
+        Building C object CMakeFiles/cmTC_b7658.dir/SIZEOF_SIZE_T.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_b7658.dir\\SIZEOF_SIZE_T.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-46uvmm\\SIZEOF_SIZE_T.c"
+        Linking C executable cmTC_b7658.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_b7658.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_b7658.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_b7658.dir/objects.a @CMakeFiles\\cmTC_b7658.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_b7658.dir/objects.a -Wl,--no-whole-archive -o cmTC_b7658.exe -Wl,--out-implib,libcmTC_b7658.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_b7658.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-46uvmm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fftw3/CMakeLists.txt:105 (check_type_size)"
+    checks:
+      - "Check size of ptrdiff_t"
+    directories:
+      source: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gczl9b"
+      binary: "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gczl9b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_PTRDIFF_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gczl9b'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_c25c3/fast
+        C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c25c3.dir\\build.make CMakeFiles/cmTC_c25c3.dir/build
+        mingw32-make[1]: Entering directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gczl9b'
+        Building C object CMakeFiles/cmTC_c25c3.dir/SIZEOF_PTRDIFF_T.c.obj
+        C:\\MinGW\\bin\\gcc.exe    -o CMakeFiles\\cmTC_c25c3.dir\\SIZEOF_PTRDIFF_T.c.obj -c "C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gczl9b\\SIZEOF_PTRDIFF_T.c"
+        Linking C executable cmTC_c25c3.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c25c3.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c25c3.dir/objects.a
+        C:\\MinGW\\bin\\ar.exe qc CMakeFiles\\cmTC_c25c3.dir/objects.a @CMakeFiles\\cmTC_c25c3.dir\\objects1.rsp
+        C:\\MinGW\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_c25c3.dir/objects.a -Wl,--no-whole-archive -o cmTC_c25c3.exe -Wl,--out-implib,libcmTC_c25c3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_c25c3.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/My Documents/DSPProjects/AudioProcessor_Mod/build/CMakeFiles/CMakeScratch/TryCompile-gczl9b'
+        
+      exitCode: 0
+...

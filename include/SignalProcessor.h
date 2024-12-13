@@ -9,6 +9,13 @@
 // this could be combined with audioprocessor?
 class SignalProcessor {
     public:
+        // Utility method to filter frequencies within a given range
+        std::vector<double> filterFrequencies(const std::vector<double>& frequencies,
+                                                        const std::vector<double>& magnitudes,
+                                                        double lowRange,
+                                                        double highRange,
+                                                        double magnitudeThreshold);
+
         // Helper function to filter FFT Output within a given range
         static std::vector<std::complex<double>> filterFFTOutput(
             const std::vector<std::complex<double>>& fftOutput,
@@ -38,11 +45,9 @@ class SignalProcessor {
         // method for chunking, processing and reconstructing audio
         static std::vector<double> extractAudioFromChunks(
             const std::vector<double>& originalSignal, 
-            size_t fftSize, 
             double sampleRate,
             double lowFreq, 
-            double highFreq,
-            FFTProcessor& fftProcessor
+            double highFreq
         );
 
 };
