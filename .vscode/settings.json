@@ -78,6 +78,10 @@
         "variant": "cpp",
         "xtree": "cpp",
         "audioprocessingstrategyfactory": "cpp",
-        "xyhuman": "cpp"
+        "xyhuman": "cpp",
+        "future": "cpp",
+        "numeric": "cpp",
+        "queue": "cpp",
+        "random": "cpp"
     }
 }

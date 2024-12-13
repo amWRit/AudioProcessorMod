@@ -59,7 +59,7 @@ int main() {
     //size_t fftSize = 4096;
 
     // Get the strategy type from user input or configuration (e.g., "fft" or "filter")
-    std::string strategyType = "extract";  // Example input (could be user-driven)
+    std::string strategyType = "audioExtract";  // Example input (could be user-driven)
 
     // Repeat for Drum
     std::string instrumentType = "drum";
@@ -73,156 +73,63 @@ int main() {
     std::vector<double> timeDomainSignal = strategy->process(fileHandler);
     std::string outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
     fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+    std::cout << "===Audio Extracted successfully!===\n\n";
 
-    // Repeat for Cymbal
-    instrumentType = "cymbal";
-    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
+    // == CHANGE SPEED TEST
+    strategyType = "changeAudioSpeed";  // Example input (could be user-driven)
+    instrumentType = "";
+    double factor = 0.5;
+    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType, factor);
     if (!strategy) {
         std::cerr << "Unsupported strategy!" << std::endl;
         return -1;
     }
     timeDomainSignal = strategy->process(fileHandler);
-    outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    outputFilePath = "../audio/output/" + strategyType + ".wav";
     fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+    std::cout << "=== Audio Speed Changed Successfully by SPEED FACTOR:" << factor << " ===\n\n";
 
-    // Repeat for Synth
-    instrumentType = "synth";
-    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
+    // == CHANGE VOLUME TEST
+    strategyType = "changeAudioVolume";  // Example input (could be user-driven)
+    instrumentType = "";
+    factor = 2;
+    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType, factor);
     if (!strategy) {
         std::cerr << "Unsupported strategy!" << std::endl;
         return -1;
     }
     timeDomainSignal = strategy->process(fileHandler);
-    outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    outputFilePath = "../audio/output/" + strategyType + ".wav";
     fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
-
-    // Repeat for Cymbal
-    instrumentType = "xxhuman";
-    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
-    if (!strategy) {
-        std::cerr << "Unsupported strategy!" << std::endl;
-        return -1;
-    }
-    timeDomainSignal = strategy->process(fileHandler);
-    outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
-    fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
-
-    // Repeat for Cymbal
-    instrumentType = "xyhuman";
-    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
-    if (!strategy) {
-        std::cerr << "Unsupported strategy!" << std::endl;
-        return -1;
-    }
-    timeDomainSignal = strategy->process(fileHandler);
-    outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
-    fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
-    // //Repeat for guitar
-    // instrumentType = "guitar";
-    // strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
-    // if (!strategy) {
-    //     std::cerr << "Unsupported strategy!" << std::endl;
-    //     return -1;
-    // }
-    // timeDomainSignal = strategy->process(fileHandler);
-    // outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
-    // fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
-
-    // //Repeat for piano
-    // instrumentType = "piano";
-    // strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
-    // if (!strategy) {
-    //     std::cerr << "Unsupported strategy!" << std::endl;
-    //     return -1;
-    // }
-    // timeDomainSignal = strategy->process(fileHandler);
-    // outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
-    // fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
-
-    // //Repeat for human
-    // instrumentType = "human";
-    // strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
-    // if (!strategy) {
-    //     std::cerr << "Unsupported strategy!" << std::endl;
-    //     return -1;
-    // }
-    // timeDomainSignal = strategy->process(fileHandler);
-    // outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
-    // fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
-
-    // // Create an FFTProcessor instance
-    // FFTProcessor fftProcessor(fftSize, sampleRate);
-
-    // // Perform FFT processing on the data
-    // fftProcessor.performFFT(originalSignal);
-
-    // // Retrieve frequencies and magnitudes
-    // // could use a map to store freq and mag --> use a single method ?
-    // std::vector<std::complex<double>> fftOutput = fftProcessor.getFFTOutput();
-    // std::vector<double> frequencies = SignalProcessor::calculateFrequencies(fftSize, sampleRate, fftOutput);
-    // std::vector<double> magnitudes = SignalProcessor::calculateMagnitudes(fftSize, sampleRate, fftOutput);
-
-    // // Print the results (for demonstration purposes)
-    // std::cout << "Frequency Spectrum:\n";
-    // for (size_t i = 0; i < frequencies.size(); ++i) {
-    //     std::cout << "Frequency: " << frequencies[i] << " Hz, Magnitude: " << magnitudes[i] << "\n";
-    // }
-
-    // std::cout << "FFT computed successfully!\n";
-    // std::cout << "Frequencies and magnitudes extracted.\n";
-
-    // // Identify frequencies of Guitar
-    // GuitarIdentifier guitarIdentifier;
-    // std::vector<double> guitarFrequencies = guitarIdentifier.identifyInstruments(frequencies, magnitudes);
-
-    // if (!guitarFrequencies.empty()) {
-    //     std::cout << "Guitar Detected at Frequencies: ";
-    //     for (double freq : guitarFrequencies) {
-    //         std::cout << freq << " Hz ";
-    //     }
-    //     std::cout << "\n";
-    // }
-
-    // std::cout << "==================================\n";
-    // //Identify frequencies of Drum
-    // DrumIdentifier drumIdentifier;
-    // std::vector<double> drumFrequencies = drumIdentifier.identifyInstruments(frequencies, magnitudes);
-
-    // if (!drumFrequencies.empty()) {
-    //     std::cout << "Drum Detected at Frequencies: ";
-    //     for (double freq : drumFrequencies) {
-    //         std::cout << freq << " Hz ";
-    //     }
-    //     std::cout << "\n";
-    // }
-    // std::cout << "==================================\n";
-
-    // Perform the FFT on the original audio signal (assuming this is already done)
-    // fftOutput = fftProcessor.getFFTOutput();  // FFT of the original audio
-    // auto allTimeSignal = fftProcessor.performIFFT(fftOutput);  // Perform IFFT on the entire FFT output
+    std::cout << "=== Audio Volume Changed Successfully by FACTOR:" << factor << " ===\n\n";
     
-    //  // Compare the original and the IFFT result
-    // bool result = SignalProcessor::compareSignals(originalSignal, allTimeSignal);
-    // if (result) {
-    //     std::cout << "FFT and IFFT are successful, original and IFFT signals match!" << std::endl;
-    // } else {
-    //     std::cerr << "FFT and IFFT results do not match!" << std::endl;
-    // }
- 
-    // //using new extract audio method
-    // std::vector<double> guitarTimeSignal  = SignalProcessor::extractAudioFromChunks(
-    //     originalSignal, sampleRate, 
-    //     guitarIdentifier.getLowGuitar(), guitarIdentifier.getHighGuitar()
-    // );
-    // fileHandler->saveAudio("../audio/output/guitarAudio.wav", guitarTimeSignal, sampleRate);
+    // == REVERB TEST
+    strategyType = "audioReverb";  // Example input (could be user-driven)
+    instrumentType = "";
+    factor = 0.2;
+    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType, factor);
+    if (!strategy) {
+        std::cerr << "Unsupported strategy!" << std::endl;
+        return -1;
+    }
+    timeDomainSignal = strategy->process(fileHandler);
+    outputFilePath = "../audio/output/" + strategyType + ".wav";
+    fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+    std::cout << "=== Audio Reverb Successfully by FACTOR:" << factor << " ===\n\n";
 
-    // //using new extract audio method
-    // std::vector<double> drumTimeSignal  = SignalProcessor::extractAudioFromChunks(
-    //     originalSignal, sampleRate, 
-    //     drumIdentifier.getLowDrum(), drumIdentifier.getHighDrum()
-    // );
-    // fileHandler->saveAudio("../audio/output/drumAudio.wav", drumTimeSignal, sampleRate);
-    // std::cout << "Separated audio saved as guitarAudio.wav and drumAudio.wav\n";
+    // == REVERSE TEST
+    strategyType = "audioReverse";  // Example input (could be user-driven)
+    instrumentType = "";
+    factor = 0;
+    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType, factor);
+    if (!strategy) {
+        std::cerr << "Unsupported strategy!" << std::endl;
+        return -1;
+    }
+    timeDomainSignal = strategy->process(fileHandler);
+    outputFilePath = "../audio/output/" + strategyType + ".wav";
+    fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+    std::cout << "=== Audio Reversed Successfully:" << factor << " ===\n\n";
 
     getchar();
     return 0;
