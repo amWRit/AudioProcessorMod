@@ -42,6 +42,7 @@ int main() {
     int bitDepth = fileHandler->getBitDepth();
 
     std::cout << "Audio file loaded successfully!\n";
+    std::cout << inputFilePath << "\n";
     std::cout << "Sample Rate: " << sampleRate << " Hz\n";
     std::cout << "Bit Depth: " << bitDepth << " bits\n";
     std::cout << "Channels: " << buffer.size() << "\n";
@@ -59,7 +60,9 @@ int main() {
 
     // Get the strategy type from user input or configuration (e.g., "fft" or "filter")
     std::string strategyType = "extract";  // Example input (could be user-driven)
-    std::string instrumentType = "guitar";
+
+    // Repeat for Drum
+    std::string instrumentType = "drum";
     // Use the factory to create the appropriate strategy
     auto strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
     if (!strategy) {
@@ -71,18 +74,82 @@ int main() {
     std::string outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
     fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
 
-    //Repeat for drum
-    instrumentType = "drum";
-    // Use the factory to create the appropriate strategy
+    // Repeat for Cymbal
+    instrumentType = "cymbal";
     strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
     if (!strategy) {
         std::cerr << "Unsupported strategy!" << std::endl;
         return -1;
     }
-    // Process the audio signal using the selected strategy
     timeDomainSignal = strategy->process(fileHandler);
     outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
     fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+
+    // Repeat for Synth
+    instrumentType = "synth";
+    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
+    if (!strategy) {
+        std::cerr << "Unsupported strategy!" << std::endl;
+        return -1;
+    }
+    timeDomainSignal = strategy->process(fileHandler);
+    outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+
+    // Repeat for Cymbal
+    instrumentType = "xxhuman";
+    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
+    if (!strategy) {
+        std::cerr << "Unsupported strategy!" << std::endl;
+        return -1;
+    }
+    timeDomainSignal = strategy->process(fileHandler);
+    outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+
+    // Repeat for Cymbal
+    instrumentType = "xyhuman";
+    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
+    if (!strategy) {
+        std::cerr << "Unsupported strategy!" << std::endl;
+        return -1;
+    }
+    timeDomainSignal = strategy->process(fileHandler);
+    outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+    // //Repeat for guitar
+    // instrumentType = "guitar";
+    // strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
+    // if (!strategy) {
+    //     std::cerr << "Unsupported strategy!" << std::endl;
+    //     return -1;
+    // }
+    // timeDomainSignal = strategy->process(fileHandler);
+    // outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    // fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+
+    // //Repeat for piano
+    // instrumentType = "piano";
+    // strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
+    // if (!strategy) {
+    //     std::cerr << "Unsupported strategy!" << std::endl;
+    //     return -1;
+    // }
+    // timeDomainSignal = strategy->process(fileHandler);
+    // outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    // fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+
+    // //Repeat for human
+    // instrumentType = "human";
+    // strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
+    // if (!strategy) {
+    //     std::cerr << "Unsupported strategy!" << std::endl;
+    //     return -1;
+    // }
+    // timeDomainSignal = strategy->process(fileHandler);
+    // outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    // fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
+
     // // Create an FFTProcessor instance
     // FFTProcessor fftProcessor(fftSize, sampleRate);
 
