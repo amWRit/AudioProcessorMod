@@ -6,6 +6,10 @@
 #include "../include/FFTProcessor.h"
 #include <complex>
 
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
+
 // Utility method to filter frequencies within a given range
 std::vector<double> filterFrequencies(const std::vector<double>& frequencies,
                                     const std::vector<double>& magnitudes,
@@ -35,8 +39,12 @@ std::vector<std::complex<double>> SignalProcessor::filterFFTOutput(
     for (size_t i = 0; i < frequencies.size(); ++i) {
         if (frequencies[i] >= lowFreq && frequencies[i] <= highFreq) {
             filteredFFTOutput[i] = fftOutput[i];
+            // std::cout << "Keeping frequency: " << frequencies[i] << std::endl;
         } else {
             filteredFFTOutput[i] = std::complex<double>(0.0, 0.0);
+            // Apply windowing (e.g., Hamming) outside the range to reduce sharp cutoff artifacts
+            // double window = 0.5 * (1 - cos(2 * M_PI * (frequencies[i] - lowFreq) / (highFreq - lowFreq))); // Hamming window
+            // filteredFFTOutput[i] = fftOutput[i] * window;
         }
     }
     return filteredFFTOutput;
@@ -101,6 +109,11 @@ std::vector<double> SignalProcessor::extractAudioFromChunks(
     size_t fftSize = Settings::getFFTSize();
     size_t numChunks = signalSize / fftSize;
 
+    // std::cout << "Extraction started...:\n";
+
+    // std::cout << "Sample Rate: " << sampleRate << " Hz\n";
+    // std::cout << "Size: " << originalSignal.size() << "\n";
+
     // Process each chunk of fftSize
     for (size_t i = 0; i < numChunks; ++i) {
         std::vector<double> chunk(originalSignal.begin() + i * fftSize, 
@@ -110,8 +123,6 @@ std::vector<double> SignalProcessor::extractAudioFromChunks(
         const std::vector<std::complex<double>>& fftOutput = fftProcessor.getFFTOutput();
         std::vector<double> frequencies = calculateFrequencies(fftSize, sampleRate, fftOutput);
         
-        //std::cout << "Extraction started...:\n";
-
         std::vector<std::complex<double>> filteredFFTOutput = filterFFTOutput(fftOutput, frequencies, lowFreq, highFreq);
         
         // std::cout << "Filtered fft output:\n";
