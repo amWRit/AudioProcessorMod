@@ -1,0 +1,11 @@
+prefix=C:/Program Files (x86)/GuitarAudioProject
+exec_prefix=C:/Program Files (x86)/GuitarAudioProject
+libdir=C:/Program Files (x86)/GuitarAudioProject/lib
+includedir=C:/Program Files (x86)/GuitarAudioProject/include
+
+Name: FFTW
+Description: fast Fourier transform library
+Version: 3.3.10
+Libs: -L${libdir} -lfftw3 
+Libs.private: -lm
+Cflags: -I${includedir}
