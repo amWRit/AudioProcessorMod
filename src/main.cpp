@@ -5,8 +5,7 @@
 #include "../include/AudioFileHandlerFactory.h"
 #include "../include/AudioProcessingStrategyFactory.h"
 #include "../include/FFTProcessor.h"
-#include "../include/GuitarIdentifier.h"
-#include "../include/DrumIdentifier.h"
+#include "../include/InstrumentFactory.h"
 #include "../include/SignalProcessor.h"
 #include "../include/AudioFile.h"
 #include "../include/Utils.h"
@@ -60,33 +59,30 @@ int main() {
 
     // Get the strategy type from user input or configuration (e.g., "fft" or "filter")
     std::string strategyType = "extract";  // Example input (could be user-driven)
-
+    std::string instrumentType = "guitar";
     // Use the factory to create the appropriate strategy
-    auto strategy = AudioProcessingStrategyFactory::createStrategy(strategyType);
+    auto strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
     if (!strategy) {
         std::cerr << "Unsupported strategy!" << std::endl;
         return -1;
     }
-
     // Process the audio signal using the selected strategy
     std::vector<double> timeDomainSignal = strategy->process(fileHandler);
+    std::string outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
 
-    // Create an FFTProcessor instance
-    // FFTProcessor fftProcessor(fftSize, sampleRate);
-    // std::vector<std::complex<double>> fftOutput = fftProcessor.getFFTOutput();
-    // std::vector<double> frequencies = SignalProcessor::calculateFrequencies(fftSize, sampleRate, fftOutput);
-    // std::vector<double> magnitudes = SignalProcessor::calculateMagnitudes(fftSize, sampleRate, fftOutput);
-    // // Print the results (for demonstration purposes)
-    // std::cout << "Frequency Spectrum:\n";
-    // for (size_t i = 0; i < frequencies.size(); ++i) {
-    //     std::cout << "Frequency: " << frequencies[i] << " Hz, Magnitude: " << magnitudes[i] << "\n";
-    // }
-
-    // std::cout << "FFT computed successfully!\n";
-    // std::cout << "Frequencies and magnitudes extracted.\n";
-
-    fileHandler->saveAudio("../audio/output/extractedAudio.wav", timeDomainSignal, sampleRate);
-
+    //Repeat for drum
+    instrumentType = "drum";
+    // Use the factory to create the appropriate strategy
+    strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
+    if (!strategy) {
+        std::cerr << "Unsupported strategy!" << std::endl;
+        return -1;
+    }
+    // Process the audio signal using the selected strategy
+    timeDomainSignal = strategy->process(fileHandler);
+    outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
     // // Create an FFTProcessor instance
     // FFTProcessor fftProcessor(fftSize, sampleRate);
 
