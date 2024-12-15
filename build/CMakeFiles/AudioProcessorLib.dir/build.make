@@ -71,26 +71,11 @@ include CMakeFiles/AudioProcessorLib.dir/flags.make
 CMakeFiles/AudioProcessorLib.dir/codegen:
 .PHONY : CMakeFiles/AudioProcessorLib.dir/codegen
 
-CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj: CMakeFiles/AudioProcessorLib.dir/flags.make
-CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj: CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp
-CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/DrumIdentifier.cpp
-CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj: CMakeFiles/AudioProcessorLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj -MF CMakeFiles\AudioProcessorLib.dir\src\DrumIdentifier.cpp.obj.d -o CMakeFiles\AudioProcessorLib.dir\src\DrumIdentifier.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\DrumIdentifier.cpp"
-
-CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\DrumIdentifier.cpp" > CMakeFiles\AudioProcessorLib.dir\src\DrumIdentifier.cpp.i
-
-CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\DrumIdentifier.cpp" -o CMakeFiles\AudioProcessorLib.dir\src\DrumIdentifier.cpp.s
-
 CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj: CMakeFiles/AudioProcessorLib.dir/flags.make
 CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj: CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp
 CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/FFTProcessor.cpp
 CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj: CMakeFiles/AudioProcessorLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj -MF CMakeFiles\AudioProcessorLib.dir\src\FFTProcessor.cpp.obj.d -o CMakeFiles\AudioProcessorLib.dir\src\FFTProcessor.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\FFTProcessor.cpp"
 
 CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.i: cmake_force
@@ -101,71 +86,26 @@ CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\FFTProcessor.cpp" -o CMakeFiles\AudioProcessorLib.dir\src\FFTProcessor.cpp.s
 
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj: CMakeFiles/AudioProcessorLib.dir/flags.make
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj: CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/FFTProcessorMod.cpp
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj: CMakeFiles/AudioProcessorLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj -MF CMakeFiles\AudioProcessorLib.dir\src\FFTProcessorMod.cpp.obj.d -o CMakeFiles\AudioProcessorLib.dir\src\FFTProcessorMod.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\FFTProcessorMod.cpp"
+CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.obj: CMakeFiles/AudioProcessorLib.dir/flags.make
+CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.obj: CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp
+CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/InstrumentFactory.cpp
+CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.obj: CMakeFiles/AudioProcessorLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.obj -MF CMakeFiles\AudioProcessorLib.dir\src\InstrumentFactory.cpp.obj.d -o CMakeFiles\AudioProcessorLib.dir\src\InstrumentFactory.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\InstrumentFactory.cpp"
 
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\FFTProcessorMod.cpp" > CMakeFiles\AudioProcessorLib.dir\src\FFTProcessorMod.cpp.i
+CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\InstrumentFactory.cpp" > CMakeFiles\AudioProcessorLib.dir\src\InstrumentFactory.cpp.i
 
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\FFTProcessorMod.cpp" -o CMakeFiles\AudioProcessorLib.dir\src\FFTProcessorMod.cpp.s
-
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj: CMakeFiles/AudioProcessorLib.dir/flags.make
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj: CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/FFTProcessor_old.cpp
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj: CMakeFiles/AudioProcessorLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj -MF CMakeFiles\AudioProcessorLib.dir\src\FFTProcessor_old.cpp.obj.d -o CMakeFiles\AudioProcessorLib.dir\src\FFTProcessor_old.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\FFTProcessor_old.cpp"
-
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\FFTProcessor_old.cpp" > CMakeFiles\AudioProcessorLib.dir\src\FFTProcessor_old.cpp.i
-
-CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\FFTProcessor_old.cpp" -o CMakeFiles\AudioProcessorLib.dir\src\FFTProcessor_old.cpp.s
-
-CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj: CMakeFiles/AudioProcessorLib.dir/flags.make
-CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj: CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp
-CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/GuitarIdentifier.cpp
-CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj: CMakeFiles/AudioProcessorLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj -MF CMakeFiles\AudioProcessorLib.dir\src\GuitarIdentifier.cpp.obj.d -o CMakeFiles\AudioProcessorLib.dir\src\GuitarIdentifier.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\GuitarIdentifier.cpp"
-
-CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\GuitarIdentifier.cpp" > CMakeFiles\AudioProcessorLib.dir\src\GuitarIdentifier.cpp.i
-
-CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\GuitarIdentifier.cpp" -o CMakeFiles\AudioProcessorLib.dir\src\GuitarIdentifier.cpp.s
-
-CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj: CMakeFiles/AudioProcessorLib.dir/flags.make
-CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj: CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp
-CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/Identifier.cpp
-CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj: CMakeFiles/AudioProcessorLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj -MF CMakeFiles\AudioProcessorLib.dir\src\Identifier.cpp.obj.d -o CMakeFiles\AudioProcessorLib.dir\src\Identifier.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\Identifier.cpp"
-
-CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\Identifier.cpp" > CMakeFiles\AudioProcessorLib.dir\src\Identifier.cpp.i
-
-CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\Identifier.cpp" -o CMakeFiles\AudioProcessorLib.dir\src\Identifier.cpp.s
+CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\InstrumentFactory.cpp" -o CMakeFiles\AudioProcessorLib.dir\src\InstrumentFactory.cpp.s
 
 CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.obj: CMakeFiles/AudioProcessorLib.dir/flags.make
 CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.obj: CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp
 CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/Settings.cpp
 CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.obj: CMakeFiles/AudioProcessorLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.obj -MF CMakeFiles\AudioProcessorLib.dir\src\Settings.cpp.obj.d -o CMakeFiles\AudioProcessorLib.dir\src\Settings.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\Settings.cpp"
 
 CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.i: cmake_force
@@ -180,7 +120,7 @@ CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj: CMakeFiles/AudioPr
 CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj: CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp
 CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/SignalProcessor.cpp
 CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj: CMakeFiles/AudioProcessorLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj -MF CMakeFiles\AudioProcessorLib.dir\src\SignalProcessor.cpp.obj.d -o CMakeFiles\AudioProcessorLib.dir\src\SignalProcessor.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\SignalProcessor.cpp"
 
 CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.i: cmake_force
@@ -195,7 +135,7 @@ CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj: CMakeFiles/AudioProcessorLib.
 CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj: CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp
 CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/src/main.cpp
 CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj: CMakeFiles/AudioProcessorLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj -MF CMakeFiles\AudioProcessorLib.dir\src\main.cpp.obj.d -o CMakeFiles\AudioProcessorLib.dir\src\main.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\src\main.cpp"
 
 CMakeFiles/AudioProcessorLib.dir/src/main.cpp.i: cmake_force
@@ -208,12 +148,8 @@ CMakeFiles/AudioProcessorLib.dir/src/main.cpp.s: cmake_force
 
 # Object files for target AudioProcessorLib
 AudioProcessorLib_OBJECTS = \
-"CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj" \
 "CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj" \
-"CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj" \
-"CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj" \
-"CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj" \
-"CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj" \
+"CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.obj" \
 "CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.obj" \
 "CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj" \
 "CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj"
@@ -221,18 +157,14 @@ AudioProcessorLib_OBJECTS = \
 # External object files for target AudioProcessorLib
 AudioProcessorLib_EXTERNAL_OBJECTS =
 
-libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj
 libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj
-libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj
-libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj
-libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj
-libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj
+libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.obj
 libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/src/Settings.cpp.obj
 libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj
 libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/src/main.cpp.obj
 libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/build.make
 libAudioProcessorLib.a: CMakeFiles/AudioProcessorLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libAudioProcessorLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libAudioProcessorLib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\AudioProcessorLib.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\AudioProcessorLib.dir\link.txt --verbose=$(VERBOSE)
 

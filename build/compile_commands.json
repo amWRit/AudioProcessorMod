@@ -1,39 +1,15 @@
 [
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\DrumIdentifier.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\DrumIdentifier.cpp\"",
-  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/DrumIdentifier.cpp",
-  "output": "CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj"
-},
-{
-  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
   "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\FFTProcessor.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\FFTProcessor.cpp\"",
   "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/FFTProcessor.cpp",
   "output": "CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.obj"
 },
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\FFTProcessorMod.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\FFTProcessorMod.cpp\"",
-  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/FFTProcessorMod.cpp",
-  "output": "CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj"
-},
-{
-  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\FFTProcessor_old.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\FFTProcessor_old.cpp\"",
-  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/FFTProcessor_old.cpp",
-  "output": "CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj"
-},
-{
-  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\GuitarIdentifier.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\GuitarIdentifier.cpp\"",
-  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/GuitarIdentifier.cpp",
-  "output": "CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj"
-},
-{
-  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\Identifier.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\Identifier.cpp\"",
-  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/Identifier.cpp",
-  "output": "CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj"
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorLib.dir\\src\\InstrumentFactory.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\src\\InstrumentFactory.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/src/InstrumentFactory.cpp",
+  "output": "CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.obj"
 },
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build",

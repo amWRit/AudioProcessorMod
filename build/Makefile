@@ -261,30 +261,6 @@ AudioProcessorTests/fast:
 	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/build
 .PHONY : AudioProcessorTests/fast
 
-src/DrumIdentifier.obj: src/DrumIdentifier.cpp.obj
-.PHONY : src/DrumIdentifier.obj
-
-# target to build an object file
-src/DrumIdentifier.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.obj
-.PHONY : src/DrumIdentifier.cpp.obj
-
-src/DrumIdentifier.i: src/DrumIdentifier.cpp.i
-.PHONY : src/DrumIdentifier.i
-
-# target to preprocess a source file
-src/DrumIdentifier.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.i
-.PHONY : src/DrumIdentifier.cpp.i
-
-src/DrumIdentifier.s: src/DrumIdentifier.cpp.s
-.PHONY : src/DrumIdentifier.s
-
-# target to generate assembly for a file
-src/DrumIdentifier.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/DrumIdentifier.cpp.s
-.PHONY : src/DrumIdentifier.cpp.s
-
 src/FFTProcessor.obj: src/FFTProcessor.cpp.obj
 .PHONY : src/FFTProcessor.obj
 
@@ -309,101 +285,29 @@ src/FFTProcessor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor.cpp.s
 .PHONY : src/FFTProcessor.cpp.s
 
-src/FFTProcessorMod.obj: src/FFTProcessorMod.cpp.obj
-.PHONY : src/FFTProcessorMod.obj
+src/InstrumentFactory.obj: src/InstrumentFactory.cpp.obj
+.PHONY : src/InstrumentFactory.obj
 
 # target to build an object file
-src/FFTProcessorMod.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.obj
-.PHONY : src/FFTProcessorMod.cpp.obj
+src/InstrumentFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.obj
+.PHONY : src/InstrumentFactory.cpp.obj
 
-src/FFTProcessorMod.i: src/FFTProcessorMod.cpp.i
-.PHONY : src/FFTProcessorMod.i
-
-# target to preprocess a source file
-src/FFTProcessorMod.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.i
-.PHONY : src/FFTProcessorMod.cpp.i
-
-src/FFTProcessorMod.s: src/FFTProcessorMod.cpp.s
-.PHONY : src/FFTProcessorMod.s
-
-# target to generate assembly for a file
-src/FFTProcessorMod.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessorMod.cpp.s
-.PHONY : src/FFTProcessorMod.cpp.s
-
-src/FFTProcessor_old.obj: src/FFTProcessor_old.cpp.obj
-.PHONY : src/FFTProcessor_old.obj
-
-# target to build an object file
-src/FFTProcessor_old.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.obj
-.PHONY : src/FFTProcessor_old.cpp.obj
-
-src/FFTProcessor_old.i: src/FFTProcessor_old.cpp.i
-.PHONY : src/FFTProcessor_old.i
+src/InstrumentFactory.i: src/InstrumentFactory.cpp.i
+.PHONY : src/InstrumentFactory.i
 
 # target to preprocess a source file
-src/FFTProcessor_old.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.i
-.PHONY : src/FFTProcessor_old.cpp.i
+src/InstrumentFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.i
+.PHONY : src/InstrumentFactory.cpp.i
 
-src/FFTProcessor_old.s: src/FFTProcessor_old.cpp.s
-.PHONY : src/FFTProcessor_old.s
-
-# target to generate assembly for a file
-src/FFTProcessor_old.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/FFTProcessor_old.cpp.s
-.PHONY : src/FFTProcessor_old.cpp.s
-
-src/GuitarIdentifier.obj: src/GuitarIdentifier.cpp.obj
-.PHONY : src/GuitarIdentifier.obj
-
-# target to build an object file
-src/GuitarIdentifier.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.obj
-.PHONY : src/GuitarIdentifier.cpp.obj
-
-src/GuitarIdentifier.i: src/GuitarIdentifier.cpp.i
-.PHONY : src/GuitarIdentifier.i
-
-# target to preprocess a source file
-src/GuitarIdentifier.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.i
-.PHONY : src/GuitarIdentifier.cpp.i
-
-src/GuitarIdentifier.s: src/GuitarIdentifier.cpp.s
-.PHONY : src/GuitarIdentifier.s
+src/InstrumentFactory.s: src/InstrumentFactory.cpp.s
+.PHONY : src/InstrumentFactory.s
 
 # target to generate assembly for a file
-src/GuitarIdentifier.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/GuitarIdentifier.cpp.s
-.PHONY : src/GuitarIdentifier.cpp.s
-
-src/Identifier.obj: src/Identifier.cpp.obj
-.PHONY : src/Identifier.obj
-
-# target to build an object file
-src/Identifier.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.obj
-.PHONY : src/Identifier.cpp.obj
-
-src/Identifier.i: src/Identifier.cpp.i
-.PHONY : src/Identifier.i
-
-# target to preprocess a source file
-src/Identifier.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.i
-.PHONY : src/Identifier.cpp.i
-
-src/Identifier.s: src/Identifier.cpp.s
-.PHONY : src/Identifier.s
-
-# target to generate assembly for a file
-src/Identifier.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/Identifier.cpp.s
-.PHONY : src/Identifier.cpp.s
+src/InstrumentFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AudioProcessorLib.dir\build.make CMakeFiles/AudioProcessorLib.dir/src/InstrumentFactory.cpp.s
+.PHONY : src/InstrumentFactory.cpp.s
 
 src/Settings.obj: src/Settings.cpp.obj
 .PHONY : src/Settings.obj
@@ -500,24 +404,12 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... src/DrumIdentifier.obj
-	@echo ... src/DrumIdentifier.i
-	@echo ... src/DrumIdentifier.s
 	@echo ... src/FFTProcessor.obj
 	@echo ... src/FFTProcessor.i
 	@echo ... src/FFTProcessor.s
-	@echo ... src/FFTProcessorMod.obj
-	@echo ... src/FFTProcessorMod.i
-	@echo ... src/FFTProcessorMod.s
-	@echo ... src/FFTProcessor_old.obj
-	@echo ... src/FFTProcessor_old.i
-	@echo ... src/FFTProcessor_old.s
-	@echo ... src/GuitarIdentifier.obj
-	@echo ... src/GuitarIdentifier.i
-	@echo ... src/GuitarIdentifier.s
-	@echo ... src/Identifier.obj
-	@echo ... src/Identifier.i
-	@echo ... src/Identifier.s
+	@echo ... src/InstrumentFactory.obj
+	@echo ... src/InstrumentFactory.i
+	@echo ... src/InstrumentFactory.s
 	@echo ... src/Settings.obj
 	@echo ... src/Settings.i
 	@echo ... src/Settings.s
