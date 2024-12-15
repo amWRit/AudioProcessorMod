@@ -61,6 +61,12 @@
 },
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/tests",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorTests.dir\\AudioFileHandlerFactoryTest.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\tests\\AudioFileHandlerFactoryTest.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/tests/AudioFileHandlerFactoryTest.cpp",
+  "output": "tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/tests",
   "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorTests.dir\\MainTest.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\tests\\MainTest.cpp\"",
   "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/tests/MainTest.cpp",
   "output": "tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj"

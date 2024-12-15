@@ -71,11 +71,26 @@ include tests/CMakeFiles/AudioProcessorTests.dir/flags.make
 tests/CMakeFiles/AudioProcessorTests.dir/codegen:
 .PHONY : tests/CMakeFiles/AudioProcessorTests.dir/codegen
 
+tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj: tests/CMakeFiles/AudioProcessorTests.dir/flags.make
+tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj: tests/CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp
+tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/tests/AudioFileHandlerFactoryTest.cpp
+tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj: tests/CMakeFiles/AudioProcessorTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj"
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build\tests && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj -MF CMakeFiles\AudioProcessorTests.dir\AudioFileHandlerFactoryTest.cpp.obj.d -o CMakeFiles\AudioProcessorTests.dir\AudioFileHandlerFactoryTest.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\tests\AudioFileHandlerFactoryTest.cpp"
+
+tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.i"
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build\tests && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\My Documents\DSPProjects\AudioProcessor_Mod\tests\AudioFileHandlerFactoryTest.cpp" > CMakeFiles\AudioProcessorTests.dir\AudioFileHandlerFactoryTest.cpp.i
+
+tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.s"
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build\tests && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\My Documents\DSPProjects\AudioProcessor_Mod\tests\AudioFileHandlerFactoryTest.cpp" -o CMakeFiles\AudioProcessorTests.dir\AudioFileHandlerFactoryTest.cpp.s
+
 tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj: tests/CMakeFiles/AudioProcessorTests.dir/flags.make
 tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj: tests/CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp
 tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/tests/MainTest.cpp
 tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj: tests/CMakeFiles/AudioProcessorTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj"
 	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build\tests && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj -MF CMakeFiles\AudioProcessorTests.dir\MainTest.cpp.obj.d -o CMakeFiles\AudioProcessorTests.dir\MainTest.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\tests\MainTest.cpp"
 
 tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.i: cmake_force
@@ -90,7 +105,7 @@ tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj: tests/CMakeFiles/Aud
 tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj: tests/CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp
 tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/tests/UtilsTest.cpp
 tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj: tests/CMakeFiles/AudioProcessorTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj"
 	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build\tests && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj -MF CMakeFiles\AudioProcessorTests.dir\UtilsTest.cpp.obj.d -o CMakeFiles\AudioProcessorTests.dir\UtilsTest.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\tests\UtilsTest.cpp"
 
 tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.i: cmake_force
@@ -105,7 +120,7 @@ tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj: tests
 tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj: tests/CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp
 tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj: C:/My\ Documents/DSPProjects/AudioProcessor_Mod/tests/WaveAudioFileHandlerTest.cpp
 tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj: tests/CMakeFiles/AudioProcessorTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj"
 	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build\tests && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj -MF CMakeFiles\AudioProcessorTests.dir\WaveAudioFileHandlerTest.cpp.obj.d -o CMakeFiles\AudioProcessorTests.dir\WaveAudioFileHandlerTest.cpp.obj -c "C:\My Documents\DSPProjects\AudioProcessor_Mod\tests\WaveAudioFileHandlerTest.cpp"
 
 tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.i: cmake_force
@@ -118,6 +133,7 @@ tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.s: cmake_f
 
 # Object files for target AudioProcessorTests
 AudioProcessorTests_OBJECTS = \
+"CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj" \
 "CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj" \
 "CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj" \
 "CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj"
@@ -125,6 +141,7 @@ AudioProcessorTests_OBJECTS = \
 # External object files for target AudioProcessorTests
 AudioProcessorTests_EXTERNAL_OBJECTS =
 
+tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj
@@ -136,7 +153,7 @@ tests/AudioProcessorTests.exe: lib/libgtest.a
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/linkLibs.rsp
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/objects1.rsp
 tests/AudioProcessorTests.exe: tests/CMakeFiles/AudioProcessorTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable AudioProcessorTests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable AudioProcessorTests.exe"
 	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\AudioProcessorTests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
