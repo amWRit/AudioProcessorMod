@@ -4,8 +4,10 @@ file(REMOVE_RECURSE
   "AudioProcessorTests.pdb"
   "CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj"
   "CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj.d"
-  "CMakeFiles/AudioProcessorTests.dir/WaveAudioProcessorTest.cpp.obj"
-  "CMakeFiles/AudioProcessorTests.dir/WaveAudioProcessorTest.cpp.obj.d"
+  "CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj"
+  "CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj.d"
+  "CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj"
+  "CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj.d"
   "libAudioProcessorTests.dll.a"
 )
 

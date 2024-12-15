@@ -153,6 +153,7 @@ CMakeFiles/AudioProcessorLib.dir/src/SignalProcessor.cpp.obj: \
  C:/MinGW/include/c++/14.2.0/bits/stl_tempbuf.h \
  C:/MinGW/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
  C:/MinGW/include/c++/14.2.0/pstl/execution_defs.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/Settings.h \
  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/SignalProcessor.h \
  C:/MinGW/include/c++/14.2.0/functional \
  C:/MinGW/include/c++/14.2.0/bits/std_function.h \

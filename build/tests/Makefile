@@ -208,29 +208,53 @@ MainTest.cpp.s:
 	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.s
 .PHONY : MainTest.cpp.s
 
-WaveAudioProcessorTest.obj: WaveAudioProcessorTest.cpp.obj
-.PHONY : WaveAudioProcessorTest.obj
+UtilsTest.obj: UtilsTest.cpp.obj
+.PHONY : UtilsTest.obj
 
 # target to build an object file
-WaveAudioProcessorTest.cpp.obj:
-	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioProcessorTest.cpp.obj
-.PHONY : WaveAudioProcessorTest.cpp.obj
+UtilsTest.cpp.obj:
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj
+.PHONY : UtilsTest.cpp.obj
 
-WaveAudioProcessorTest.i: WaveAudioProcessorTest.cpp.i
-.PHONY : WaveAudioProcessorTest.i
+UtilsTest.i: UtilsTest.cpp.i
+.PHONY : UtilsTest.i
 
 # target to preprocess a source file
-WaveAudioProcessorTest.cpp.i:
-	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioProcessorTest.cpp.i
-.PHONY : WaveAudioProcessorTest.cpp.i
+UtilsTest.cpp.i:
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.i
+.PHONY : UtilsTest.cpp.i
 
-WaveAudioProcessorTest.s: WaveAudioProcessorTest.cpp.s
-.PHONY : WaveAudioProcessorTest.s
+UtilsTest.s: UtilsTest.cpp.s
+.PHONY : UtilsTest.s
 
 # target to generate assembly for a file
-WaveAudioProcessorTest.cpp.s:
-	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioProcessorTest.cpp.s
-.PHONY : WaveAudioProcessorTest.cpp.s
+UtilsTest.cpp.s:
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.s
+.PHONY : UtilsTest.cpp.s
+
+WaveAudioFileHandlerTest.obj: WaveAudioFileHandlerTest.cpp.obj
+.PHONY : WaveAudioFileHandlerTest.obj
+
+# target to build an object file
+WaveAudioFileHandlerTest.cpp.obj:
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj
+.PHONY : WaveAudioFileHandlerTest.cpp.obj
+
+WaveAudioFileHandlerTest.i: WaveAudioFileHandlerTest.cpp.i
+.PHONY : WaveAudioFileHandlerTest.i
+
+# target to preprocess a source file
+WaveAudioFileHandlerTest.cpp.i:
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.i
+.PHONY : WaveAudioFileHandlerTest.cpp.i
+
+WaveAudioFileHandlerTest.s: WaveAudioFileHandlerTest.cpp.s
+.PHONY : WaveAudioFileHandlerTest.s
+
+# target to generate assembly for a file
+WaveAudioFileHandlerTest.cpp.s:
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.s
+.PHONY : WaveAudioFileHandlerTest.cpp.s
 
 # Help Target
 help:
@@ -249,9 +273,12 @@ help:
 	@echo ... MainTest.obj
 	@echo ... MainTest.i
 	@echo ... MainTest.s
-	@echo ... WaveAudioProcessorTest.obj
-	@echo ... WaveAudioProcessorTest.i
-	@echo ... WaveAudioProcessorTest.s
+	@echo ... UtilsTest.obj
+	@echo ... UtilsTest.i
+	@echo ... UtilsTest.s
+	@echo ... WaveAudioFileHandlerTest.obj
+	@echo ... WaveAudioFileHandlerTest.i
+	@echo ... WaveAudioFileHandlerTest.s
 .PHONY : help
 
 
