@@ -184,6 +184,30 @@ AudioProcessorTests/fast:
 	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/build
 .PHONY : AudioProcessorTests/fast
 
+AudioFileHandlerFactoryTest.obj: AudioFileHandlerFactoryTest.cpp.obj
+.PHONY : AudioFileHandlerFactoryTest.obj
+
+# target to build an object file
+AudioFileHandlerFactoryTest.cpp.obj:
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj
+.PHONY : AudioFileHandlerFactoryTest.cpp.obj
+
+AudioFileHandlerFactoryTest.i: AudioFileHandlerFactoryTest.cpp.i
+.PHONY : AudioFileHandlerFactoryTest.i
+
+# target to preprocess a source file
+AudioFileHandlerFactoryTest.cpp.i:
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.i
+.PHONY : AudioFileHandlerFactoryTest.cpp.i
+
+AudioFileHandlerFactoryTest.s: AudioFileHandlerFactoryTest.cpp.s
+.PHONY : AudioFileHandlerFactoryTest.s
+
+# target to generate assembly for a file
+AudioFileHandlerFactoryTest.cpp.s:
+	cd /d C:\MYDOCU~1\DSPProjects\AudioProcessor_Mod\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.s
+.PHONY : AudioFileHandlerFactoryTest.cpp.s
+
 MainTest.obj: MainTest.cpp.obj
 .PHONY : MainTest.obj
 
@@ -270,6 +294,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... AudioProcessorTests
+	@echo ... AudioFileHandlerFactoryTest.obj
+	@echo ... AudioFileHandlerFactoryTest.i
+	@echo ... AudioFileHandlerFactoryTest.s
 	@echo ... MainTest.obj
 	@echo ... MainTest.i
 	@echo ... MainTest.s

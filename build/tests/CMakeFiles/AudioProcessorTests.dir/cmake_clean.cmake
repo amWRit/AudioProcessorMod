@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "AudioProcessorTests.exe"
   "AudioProcessorTests.exe.manifest"
   "AudioProcessorTests.pdb"
+  "CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj"
+  "CMakeFiles/AudioProcessorTests.dir/AudioFileHandlerFactoryTest.cpp.obj.d"
   "CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj"
   "CMakeFiles/AudioProcessorTests.dir/MainTest.cpp.obj.d"
   "CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj"

@@ -90,7 +90,7 @@ int main() {
     std::cout << "=== Audio Speed Changed Successfully by SPEED FACTOR:" << factor << " ===\n\n";
 
     // == CHANGE VOLUME TEST
-    strategyType = "changeAudioVolume";  // Example input (could be user-driven)
+    strategyType = "changeAudioVolume"; // Example input (could be user-driven)
     instrumentType = "";
     factor = 2;
     strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType, factor);
