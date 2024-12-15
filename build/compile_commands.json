@@ -37,25 +37,25 @@
 },
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/googletest/googlemock",
-  "command": "C:\\MinGW\\bin\\g++.exe -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googlemock\\src\\gmock-all.cc\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googlemock\\src\\gmock-all.cc\"",
   "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googlemock/src/gmock-all.cc",
   "output": "googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
 },
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/googletest/googlemock",
-  "command": "C:\\MinGW\\bin\\g++.exe -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googlemock\\src\\gmock_main.cc\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googlemock\\src\\gmock_main.cc\"",
   "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googlemock/src/gmock_main.cc",
   "output": "googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
 },
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/googletest/googletest",
-  "command": "C:\\MinGW\\bin\\g++.exe -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googletest\\src\\gtest-all.cc\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googletest\\src\\gtest-all.cc\"",
   "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googletest/src/gtest-all.cc",
   "output": "googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
 },
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/googletest/googletest",
-  "command": "C:\\MinGW\\bin\\g++.exe -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googletest\\src\\gtest_main.cc\"",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\googletest\\googletest\\src\\gtest_main.cc\"",
   "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/googletest/googletest/src/gtest_main.cc",
   "output": "googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
 },
@@ -67,8 +67,14 @@
 },
 {
   "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/tests",
-  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorTests.dir\\WaveAudioProcessorTest.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\tests\\WaveAudioProcessorTest.cpp\"",
-  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/tests/WaveAudioProcessorTest.cpp",
-  "output": "tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioProcessorTest.cpp.obj"
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorTests.dir\\UtilsTest.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\tests\\UtilsTest.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/tests/UtilsTest.cpp",
+  "output": "tests/CMakeFiles/AudioProcessorTests.dir/UtilsTest.cpp.obj"
+},
+{
+  "directory": "C:/My Documents/DSPProjects/AudioProcessor_Mod/build/tests",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/AudioProcessorTests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AudioProcessorTests.dir\\WaveAudioFileHandlerTest.cpp.obj -c \"C:\\My Documents\\DSPProjects\\AudioProcessor_Mod\\tests\\WaveAudioFileHandlerTest.cpp\"",
+  "file": "C:/My Documents/DSPProjects/AudioProcessor_Mod/tests/WaveAudioFileHandlerTest.cpp",
+  "output": "tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioFileHandlerTest.cpp.obj"
 }
 ]

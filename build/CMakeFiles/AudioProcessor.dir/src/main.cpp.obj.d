@@ -145,7 +145,8 @@ CMakeFiles/AudioProcessor.dir/src/main.cpp.obj: \
  C:/MinGW/include/c++/14.2.0/bits/stl_vector.h \
  C:/MinGW/include/c++/14.2.0/bits/stl_bvector.h \
  C:/MinGW/include/c++/14.2.0/bits/vector.tcc \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioProcessorFactory.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/Settings.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioFileHandlerFactory.h \
  C:/MinGW/include/c++/14.2.0/memory \
  C:/MinGW/include/c++/14.2.0/bits/stl_tempbuf.h \
  C:/MinGW/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
@@ -164,8 +165,8 @@ CMakeFiles/AudioProcessor.dir/src/main.cpp.obj: \
  C:/MinGW/include/c++/14.2.0/backward/auto_ptr.h \
  C:/MinGW/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/MinGW/include/c++/14.2.0/pstl/execution_defs.h \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioProcessor.h \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/WaveAudioProcessor.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioFileHandler.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/WaveAudioFileHandler.h \
  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioFile.h \
  C:/MinGW/include/c++/14.2.0/cassert \
  C:/MinGW/x86_64-w64-mingw32/include/assert.h \
@@ -209,15 +210,23 @@ CMakeFiles/AudioProcessor.dir/src/main.cpp.obj: \
  C:/MinGW/include/c++/14.2.0/tr1/poly_laguerre.tcc \
  C:/MinGW/include/c++/14.2.0/tr1/riemann_zeta.tcc \
  C:/MinGW/include/c++/14.2.0/array C:/MinGW/include/c++/14.2.0/compare \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/FFTProcessor.h \
- C:/MinGW/include/c++/14.2.0/complex C:/MinGW/include/c++/14.2.0/sstream \
- C:/MinGW/include/c++/14.2.0/bits/sstream.tcc \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/GuitarIdentifier.h \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/Identifier.h \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/DrumIdentifier.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioProcessingStrategyFactory.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioProcessingStrategy.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/ExtractAudioChunksStrategy.h \
  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/SignalProcessor.h \
  C:/MinGW/include/c++/14.2.0/functional \
  C:/MinGW/include/c++/14.2.0/bits/std_function.h \
  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/FFTProcessor.h \
+ C:/MinGW/include/c++/14.2.0/complex C:/MinGW/include/c++/14.2.0/sstream \
+ C:/MinGW/include/c++/14.2.0/bits/sstream.tcc \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/FilterFrequencyRangeStrategy.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/ChangeAudioSpeedStrategy.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/ChangeAudioVolumeStrategy.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioReverbStrategy.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioReverseStrategy.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/InstrumentFactory.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/Instrument.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/FFTProcessor.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/SignalProcessor.h \
  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioFile.h \
  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/Utils.h

@@ -237,8 +237,8 @@ tests/CMakeFiles/AudioProcessorTests.dir/WaveAudioProcessorTest.cpp.obj: \
  C:/MYDOCU~1/DSPProjects/AudioProcessor_Mod/googletest/googletest/include/gtest/gtest-typed-test.h \
  C:/MYDOCU~1/DSPProjects/AudioProcessor_Mod/googletest/googletest/include/gtest/gtest_pred_impl.h \
  C:/MYDOCU~1/DSPProjects/AudioProcessor_Mod/googletest/googletest/include/gtest/gtest_prod.h \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/WaveAudioProcessor.h \
- C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioProcessor.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/WaveAudioFileHandler.h \
+ C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioFileHandler.h \
  C:/My\ Documents/DSPProjects/AudioProcessor_Mod/include/AudioFile.h \
  C:/MinGW/include/c++/14.2.0/cstring C:/MinGW/include/c++/14.2.0/fstream \
  C:/MinGW/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \

@@ -131,9 +131,9 @@ std::vector<double> SignalProcessor::extractAudioFromChunks(
         // }
 
         // Convert filteredFFTOutput (std::vector<std::complex<double>>) to std::vector<kiss_fft_cpx>
-        std::vector<kiss_fft_cpx> kissFilteredFFTOutput = fftProcessor.convertToKissFFTFormat(filteredFFTOutput);
+        //std::vector<kiss_fft_cpx> kissFilteredFFTOutput = fftProcessor.convertToKissFFTFormat(filteredFFTOutput);
 
-        std::vector<double> ifftOutput = fftProcessor.performIFFT(kissFilteredFFTOutput);  // Call the existing IFFT method
+        std::vector<double> ifftOutput = fftProcessor.performIFFT(filteredFFTOutput);  // Call the existing IFFT method
         
         // For printing purposes
         // std::cout << "Filtered ifft output:\n";

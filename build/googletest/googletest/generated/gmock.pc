@@ -1,5 +1,5 @@
-libdir=C:/Program Files (x86)/GuitarAudioProject/lib
-includedir=C:/Program Files (x86)/GuitarAudioProject/include
+libdir=C:/Program Files (x86)/AudioProcessor/lib
+includedir=C:/Program Files (x86)/AudioProcessor/include
 
 Name: gmock
 Description: GoogleMock (without main() function)
