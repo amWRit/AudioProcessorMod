@@ -17,7 +17,6 @@ class ExtractAudioChunksStrategy : public AudioProcessingStrategy {
         // }
 
         std::vector<double> process(std::shared_ptr<AudioFileHandler> fileHandler) const {
-            // Replace this with your actual processing logic
             // Access buffer and metadata through AudioFileHandler
             const auto& buffer = fileHandler->getBuffer();
             double sampleRate = fileHandler->getSampleRate();

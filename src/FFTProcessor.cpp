@@ -1,4 +1,4 @@
-#include "FFTProcessor.h"
+#include "../include/FFTProcessor.h"
 #include <cmath>
 #include <iostream>
 
@@ -48,6 +48,7 @@ const std::vector<std::complex<double>>& FFTProcessor::getFFTOutput() const {
 
 void FFTProcessor::fft(std::vector<std::complex<double>>& data, bool inverse) {
     // Example of Cooley-Tukey FFT algorithm (simplified, power-of-2 only)
+    // just a copy/paste from genAI here; kissfft and fftw3 libraries gave problems in testing
     size_t N = data.size();
     if (N <= 1) return;
 

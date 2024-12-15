@@ -18,7 +18,7 @@ private:
     double sampleRate;
     std::vector<std::complex<double>> in, out;
 
-    // Helper methods for FFT/IFFT (if implementing your own)
+    // Helper methods for FFT/IFFT 
     void fft(std::vector<std::complex<double>>& data, bool inverse);
 };
 

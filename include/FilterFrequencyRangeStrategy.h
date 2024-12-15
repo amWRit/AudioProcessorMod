@@ -18,7 +18,7 @@
 //         // Access buffer and metadata through AudioFileHandler
 //         const auto& buffer = fileHandler.getBuffer();
 //         double sampleRate = fileHandler.getSampleRate();
-            std::vector<double> filteredFrequencies;
+            // std::vector<double> filteredFrequencies;
 
             // for (size_t i = 0; i < frequencies.size(); ++i) {
             //     if (magnitudes[i] > 0.01) { // Ignore low-magnitude noise
