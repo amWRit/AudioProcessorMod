@@ -5,10 +5,11 @@
 #include <memory>
 #include <string>
 #include "Instrument.h"
+#include "EnumClass.h"
 
 class InstrumentFactory {
 public:
-    static std::shared_ptr<Instrument> createInstrument(const std::string& instrumentType);
+    static std::shared_ptr<Instrument> createInstrument(InstrumentType instrumentType);
 };
 
 #endif // INSTRUMENT_H

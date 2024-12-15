@@ -9,6 +9,7 @@
 #include "../include/SignalProcessor.h"
 #include "../include/AudioFile.h"
 #include "../include/Utils.h"
+// #include "../include/EnumClass.h"
 
 int main() {
     // Settings::setFFTSize(4096);
@@ -59,10 +60,10 @@ int main() {
     //size_t fftSize = 4096;
 
     // Get the strategy type from user input or configuration (e.g., "fft" or "filter")
-    std::string strategyType = "audioExtract";  // Example input (could be user-driven)
+    StrategyType strategyType = StrategyType::AudioExtract;  // Example input (could be user-driven)
 
     // Repeat for Drum
-    std::string instrumentType = "drum";
+    InstrumentType instrumentType = InstrumentType::Drum;
     // Use the factory to create the appropriate strategy
     auto strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType);
     if (!strategy) {
@@ -71,13 +72,13 @@ int main() {
     }
     // Process the audio signal using the selected strategy
     std::vector<double> timeDomainSignal = strategy->process(fileHandler);
-    std::string outputFilePath = "../audio/output/extracted" + instrumentType + "Audio.wav";
+    std::string outputFilePath = "../audio/output/extracted" + toString(strategyType) + toString(instrumentType) + "Audio.wav";
     fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
     std::cout << "===Audio Extracted successfully!===\n\n";
 
     // == CHANGE SPEED TEST
-    strategyType = "changeAudioSpeed";  // Example input (could be user-driven)
-    instrumentType = "";
+    strategyType =  StrategyType::ChangeAudioSpeed;  // Example input (could be user-driven)
+    instrumentType = InstrumentType::Unknown;
     double factor = 0.5;
     strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType, factor);
     if (!strategy) {
@@ -85,13 +86,13 @@ int main() {
         return -1;
     }
     timeDomainSignal = strategy->process(fileHandler);
-    outputFilePath = "../audio/output/" + strategyType + ".wav";
+    outputFilePath = "../audio/output/" + toString(strategyType) + ".wav";
     fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
     std::cout << "=== Audio Speed Changed Successfully by SPEED FACTOR:" << factor << " ===\n\n";
 
     // == CHANGE VOLUME TEST
-    strategyType = "changeAudioVolume"; // Example input (could be user-driven)
-    instrumentType = "";
+    strategyType =  StrategyType::ChangeAudioVolume; // Example input (could be user-driven)
+    instrumentType = InstrumentType::Unknown;
     factor = 2;
     strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType, factor);
     if (!strategy) {
@@ -99,13 +100,13 @@ int main() {
         return -1;
     }
     timeDomainSignal = strategy->process(fileHandler);
-    outputFilePath = "../audio/output/" + strategyType + ".wav";
+    outputFilePath = "../audio/output/" + toString(strategyType) + ".wav";
     fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
     std::cout << "=== Audio Volume Changed Successfully by FACTOR:" << factor << " ===\n\n";
     
     // == REVERB TEST
-    strategyType = "audioReverb";  // Example input (could be user-driven)
-    instrumentType = "";
+    strategyType =  StrategyType::AudioReverb;  // Example input (could be user-driven)
+    instrumentType = InstrumentType::Unknown;
     factor = 0.2;
     strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType, factor);
     if (!strategy) {
@@ -113,13 +114,13 @@ int main() {
         return -1;
     }
     timeDomainSignal = strategy->process(fileHandler);
-    outputFilePath = "../audio/output/" + strategyType + ".wav";
+    outputFilePath = "../audio/output/" + toString(strategyType) + ".wav";
     fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
     std::cout << "=== Audio Reverb Successfully by FACTOR:" << factor << " ===\n\n";
 
     // == REVERSE TEST
-    strategyType = "audioReverse";  // Example input (could be user-driven)
-    instrumentType = "";
+    strategyType =  StrategyType::AudioReverse;  // Example input (could be user-driven)
+    instrumentType = InstrumentType::Unknown;
     factor = 0;
     strategy = AudioProcessingStrategyFactory::createStrategy(strategyType, instrumentType, factor);
     if (!strategy) {
@@ -127,7 +128,7 @@ int main() {
         return -1;
     }
     timeDomainSignal = strategy->process(fileHandler);
-    outputFilePath = "../audio/output/" + strategyType + ".wav";
+    outputFilePath = "../audio/output/" + toString(strategyType) + ".wav";
     fileHandler->saveAudio(outputFilePath, timeDomainSignal, sampleRate);
     std::cout << "=== Audio Reversed Successfully:" << factor << " ===\n\n";
 

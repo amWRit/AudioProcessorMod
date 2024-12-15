@@ -19,5 +19,5 @@ class ChangeAudioVolumeStrategy : public AudioProcessingStrategy {
             return originalSignal;
         }
     private:
-        double volumeFactor; // Factor to speed up the audio
+        double volumeFactor; // Factor to change the volume
 };

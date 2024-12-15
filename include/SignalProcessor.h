@@ -6,7 +6,7 @@
 #include "../include/FFTProcessor.h"
 
 // Todo: for now all the methods here are static
-// this could be combined with audioprocessor?
+// this could be combined with audioFileHandler or use singleton audioProcessingManager?
 class SignalProcessor {
     public:
         // Utility method to filter frequencies within a given range

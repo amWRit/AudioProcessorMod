@@ -10,11 +10,12 @@
 #include "AudioReverbStrategy.h"
 #include "AudioReverseStrategy.h"
 #include "InstrumentFactory.h"
+#include "EnumClass.h"
 
 class AudioProcessingStrategyFactory {
     public:
-        static std::shared_ptr<AudioProcessingStrategy> createStrategy(const std::string& strategyType, const std::string& instrumentType = "", double factor = 1.0) {
-            if (strategyType == "audioExtract") {
+        static std::shared_ptr<AudioProcessingStrategy> createStrategy(StrategyType strategyType, InstrumentType instrumentType = InstrumentType::Unknown, double factor = 1.0) {
+            if (strategyType == StrategyType::AudioExtract) {
                 // return std::make_shared<ExtractAudioChunksStrategy>(80.0, 5000.0);
                 std::shared_ptr<Instrument> instrument = InstrumentFactory::createInstrument(instrumentType);
                 if (instrument) {
@@ -23,16 +24,17 @@ class AudioProcessingStrategyFactory {
                     
                     return std::make_shared<ExtractAudioChunksStrategy>(lowFreq, highFreq);
                 }
-            } else if (strategyType == "changeAudioSpeed") {
+            } else if (strategyType == StrategyType::ChangeAudioSpeed) {
                 return std::make_shared<ChangeAudioSpeedStrategy>(factor);
             }
-            else if (strategyType == "changeAudioVolume") {
+            else if (strategyType == StrategyType::ChangeAudioVolume) {
                 return std::make_shared<ChangeAudioVolumeStrategy>(factor);
             }
-            else if (strategyType == "audioReverb") {
+            //Todo: ask decayFactor frrom user 
+            else if (strategyType == StrategyType::AudioReverb) {
                 return std::make_shared<AudioReverbStrategy>(factor, 0.5);
             }
-            else if (strategyType == "audioReverse") {
+            else if (strategyType == StrategyType::AudioReverse) {
                 return std::make_shared<AudioReverseStrategy>();
             }
             // Add more strategy creation logic as needed
