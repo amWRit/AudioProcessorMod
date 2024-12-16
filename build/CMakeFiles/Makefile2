@@ -364,8 +364,8 @@ googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 
 # All Build rule for target.
 tests/CMakeFiles/AudioProcessorTests.dir/all: CMakeFiles/AudioProcessorLib.dir/all
-tests/CMakeFiles/AudioProcessorTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 tests/CMakeFiles/AudioProcessorTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+tests/CMakeFiles/AudioProcessorTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\AudioProcessorTests.dir\build.make tests/CMakeFiles/AudioProcessorTests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\My Documents\DSPProjects\AudioProcessor_Mod\build\CMakeFiles" --progress-num=9,10,11,12,13 "Built target AudioProcessorTests"

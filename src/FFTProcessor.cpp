@@ -37,7 +37,8 @@ std::vector<double> FFTProcessor::performIFFT(const std::vector<std::complex<dou
     // Extract real part and normalize
     std::vector<double> timeDomainData(fftSize);
     for (size_t i = 0; i < fftSize; ++i) {
-        timeDomainData[i] = in[i].real() / fftSize;
+        // timeDomainData[i] = in[i].real() / fftSize;
+        timeDomainData[i] = in[i].real();
     }
     return timeDomainData;
 }
