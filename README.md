@@ -2,6 +2,8 @@
 
 This project is an audio processing tool that allows manipulation of audio files using various strategies. The core functionality revolves around applying different audio effects like changing speed, volume, reverb, and reversing audio. The strategies are designed to be modular, enabling the user to extend the system by adding new audio effects.
 
+<img src="Capture.JPG" alt="Main Interface" width="600"/>
+
 ## Related Project
 
 Based on this console-based application, I made an enhanced version of Win32 desktop application. You can check it out [here](https://github.com/amWRit/AudioProcessorWin32APP).
